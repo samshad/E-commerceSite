@@ -16,7 +16,7 @@
                     <label>Email:</label>
                     <input type="Text" name="email" maxlength="50"/>
                     <hr>
-                    <input type="Submit"/>
+                    <input type="Submit" name="submit"/>
                 </fieldset>
             </form>
         </td>

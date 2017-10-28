@@ -1,7 +1,7 @@
 <?php
     include_once "includes/session.inc.php";
     if(!isset($_SESSION['currUser'])){
-        header("Location: /e-commerceSite/index.php");
+        header("Location: /e-commerceSite/login.php");
         exit();
     }
 ?>

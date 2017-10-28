@@ -24,7 +24,7 @@
                 <input type="text" name="email" maxlength="50"/>
                 <br>
                 <label>Message:</label>
-                <textarea name="message" cols="50" rows="30" maxlength="500"></textarea>
+                <textarea name="message" cols="50" rows="10" maxlength="500"></textarea>
                 <br>
                 <input type="Submit"/>
             </form>

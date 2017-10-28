@@ -1,5 +1,10 @@
 <?php
     include_once "includes/session.inc.php";
+    
+    if(!isset($_POST['submit'])){
+	    header("Location: /e-commerceSite/index.php");
+	    exit();
+    }
 ?>
 
 <html>
