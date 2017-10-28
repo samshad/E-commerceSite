@@ -4,11 +4,11 @@
 
 <html>
 <table width=80% border=1 cellspacing=0 cellpadding=0 align="center">
-    <tr name="header">
+    <tr>
 	    <?php include_once "includes/headerHandler.inc.php"; ?>
     </tr>
     
-    <tr name="Middle_List">
+    <tr>
         <td colspan="3" height="350px" valign="top">
             <h3><u>CONTACT US:</u></h3>
             <p align="middle">a distinct section of a piece of writing, usually dealing with a single theme and
@@ -19,28 +19,22 @@
                 indicated by a new line, indentation, or numbering.</p>
             <br>
             <h4><u>Have questions? Send a message to our customer care:</u></h4>
-            <p align="middle">
-                <text>Username:</text>
-                <input type="text" name="username"/>
+            <form>
+                <label>Email:</label>
+                <input type="text" name="email" maxlength="50"/>
                 <br>
-                <br>
-                <text>Email:</text>
-                <input type="text" name="email"/>
-                <br>
-                <br>
-                <text>Message:</text>
-                <input type="text" name="message"/>
-                <br>
+                <label>Message:</label>
+                <textarea name="message" cols="50" rows="30" maxlength="500"></textarea>
                 <br>
                 <input type="Submit"/>
-            </p>
+            </form>
             <h3><u>STAY CONNECTED</u></h3>
             <p align="middle">a distinct section of a piece of writing, usually dealing with a single theme and
                 indicated by a new line, indentation, or numbering.</p>
         </td>
     </tr>
 
-    <tr name="Bottom">
+    <tr>
 	    <?php require "includes/copyright.inc.html"; ?>
     </tr>
 </table>

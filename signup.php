@@ -4,65 +4,60 @@
 
 <html>
 <table width=80% border=1 cellspacing=0 cellpadding=0 align="center">
-    <tr name="header">
+    <tr>
 		<?php include_once "includes/headerHandler.inc.php"; ?>
     </tr>
 
-    <tr name="Third_Top_List">
+    <tr>
         <td align="center" colspan="3" height="30px">
-            <a href="">WOMEN</a>
-            <text>|</text>
-            <a href="">MEN</a>
-            <text>|</text>
-            <a href="">TSHIRT</a>
-            <text>|</text>
-            <a href="">SHIRT</a>
-            <text>|</text>
-            <a href="">PANT</a>
-            <text>|</text>
+            <a href="">WOMEN</a>|
+            <a href="">MEN</a>|
+            <a href="">TSHIRT</a>|
+            <a href="">SHIRT</a>|
+            <a href="">PANT</a>|
             <a href="">CUSTOM</a>
         </td>
     </tr>
 
-    <tr name="Middle_List">
+    <tr>
         <td align="center" colspan="3" height="350px">
             <form action="">
                 <fieldset>
                     <legend>Registration</legend>
                     
                     <label>Name:</label>
-                    <input type="text" name="firstname" placeholder="First Name"/>
-                    <input type="text" name="lastname" placeholder="Last Name"/>
+                    <input type="text" name="firstname" placeholder="First Name" maxlength="25"/>
+                    <input type="text" name="lastname" placeholder="Last Name" maxlength="25"/>
                     
                     <hr>
                     
                     <label>Email Address:</label>
-                    <input type="text" name="email"/>
+                    <input type="text" name="email" maxlength="50"/>
                     
                     <hr>
                     
                     <label>User Name:</label>
-                    <input type="text" name="username"/>
+                    <input type="text" name="username" maxlength="20"/>
                     
                     <hr>
                     
                     <label>Password:</label>
-                    <input type="Password" name="password1"/>
+                    <input type="Password" name="password1" maxlength="50"/>
                     
                     <hr>
                     
                     <label>Confirm Password:</label>
-                    <input type="Password" name="password2"/>
+                    <input type="Password" name="password2" maxlength="50"/>
                     
                     <hr>
                     
                     <label>Mobile:</label>
-                    <input type="text" name="mobile" value="+88"/>
+                    <input type="text" name="mobile" value="+88" maxlength="15"/>
                     
                     <hr>
                     
                     <label>Address:</label>
-                    <textarea name="address" cols="30" rows="3"></textarea>
+                    <textarea name="address" cols="30" rows="3" maxlength="100"></textarea>
                     
                     <hr>
                     
@@ -78,11 +73,11 @@
                     <label>Date of Birth:</label>
                     <table>
                         <tr>
-                            <th align = "center"><input name = "day"/></th>
+                            <th align = "center"><input name = "day" maxlength="2"/></th>
                             <th align = "center">/</th>
-                            <th align = "center"><input name = "month"/></th>
+                            <th align = "center"><input name = "month" maxlength="2"/></th>
                             <th align = "center">/</th>
-                            <th align = "center"><input name = "year"/></th>
+                            <th align = "center"><input name = "year" maxlength="4"/></th>
                         </tr>
                     </table>
                     
@@ -95,7 +90,7 @@
         </td>
     </tr>
 
-    <tr name="Bottom">
+    <tr>
 		<?php require "includes/copyright.inc.html"; ?>
     </tr>
 </table>
