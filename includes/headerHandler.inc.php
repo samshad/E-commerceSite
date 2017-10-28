@@ -11,10 +11,8 @@
 <?php
     if(!isset($_SESSION['currUser'])){
         echo '<td align = "right" colspan = "3" height = "30px">
-                    <a href="index.php">HOME</a>
-                    <text>|</text>
-                    <a href="login.php">LOGIN</a>
-                    <text>|</text>
+                    <a href="index.php">HOME</a>|
+                    <a href="login.php">LOGIN</a>|
                     <a href="aboutus.php">ABOUT US</a>
                 </td>';
     }
@@ -28,23 +26,10 @@
                 </td>';
 	
 	    echo '<td align = "right" colspan = "2" height = "30px">
-                    <a href="index.php">HOME</a>
-                    <text>|</text>
-                    <a href="logout.php">LOG OUT</a>
-                    <text>|</text>
+                    <a href="index.php">HOME</a>|
+                    <a href="cart.php">CART</a>|
+                    <a href="logout.php">LOG OUT</a>|
                     <a href="aboutus.php">ABOUT US</a>
                 </td>';
     }
-?>
-
-<?php
-    /*<td align = "right" colspan = "3" height = "30px">
-        <a href="index.php">HOME</a>
-        <text>|</text>
-        <a href="login.php">LOGIN</a>
-        <text>|</text>
-        <a href="cart.php">CART</a>
-        <text>|</text>
-        <a href="aboutus.php">ABOUT US</a>
-    </td>*/
 ?>
