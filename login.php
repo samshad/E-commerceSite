@@ -21,7 +21,7 @@
 
     <tr>
         <td align="center" colspan="3" height="350px">
-            <form action="">
+            <form action="includes/login.inc.php" method="POST">
                 <fieldset style="width:350px">
                     <legend>Login</legend>
                     <label>User Name:</label>
@@ -31,7 +31,7 @@
                     <hr>
                     <input type="Checkbox"/><label>Remember Me</label>
                     <a href="forgotpassword.php">Forgot Password?</a><br>
-                    <input type="Submit" value="Sign in"/>
+                    <input type="Submit" name="submit" value="Sign in"/>
                     <Button type="Submit" formaction="signup.php"><a href="signup.php">Sign Up</a></Button>
                 </fieldset>
             </form>

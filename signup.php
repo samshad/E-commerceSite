@@ -21,7 +21,7 @@
 
     <tr>
         <td align="center" colspan="3" height="350px">
-            <form action="">
+            <form action="includes/signup.inc.php" method="POST">
                 <fieldset>
                     <legend>Registration</legend>
                     
@@ -83,7 +83,7 @@
                     
                     <hr>
                     
-                    <input type="Submit" value="Sign Up"/>
+                    <input type="Submit" name="submit" value="Sign Up"/>
                     <input type="Reset" value="Reset"/>
                 </fieldset>
             </form>
