@@ -28,7 +28,16 @@
                     <input type="File" name="upload" value="Change Profile Picture"/>
                     <hr>
                     
+                    <label>First Name:</label>
+                    <hr>
+                    
+                    <label>Last Name:</label>
+                    <hr>
+                    
                     <label>User Name:</label>
+                    <hr>
+                    
+                    <label>Date Of Birth:</label>
                     <hr>
                   
                     <label>E-mail Address:</label>
