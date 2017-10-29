@@ -9,14 +9,7 @@
     </tr>
 
     <tr>
-        <td align="center" colspan="3" height="30px">
-            <a href="">WOMEN</a>|
-            <a href="">MEN</a>|
-            <a href="">TSHIRT</a>|
-            <a href="">SHIRT</a>|
-            <a href="">PANT</a>|
-            <a href="">CUSTOM</a>
-        </td>
+		<?php include_once "includes/headerMenu.inc.php"; ?>
     </tr>
 
     <tr>

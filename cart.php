@@ -13,86 +13,78 @@
     </tr>
     
     <tr>
-        <td align="center" colspan="3" height="30px">
-            <a href="">WOMEN</a>|
-            <a href="">MEN</a>|
-            <a href="">TSHIRT</a>|
-            <a href="">SHIRT</a>|
-            <a href="">PANT</a>|
-            <a href="">CUSTOM</a>
-        </td>
+	    <?php include_once "includes/headerMenu.inc.php"; ?>
     </tr>
 
     <tr>
         <td align="center" colspan="3">
             <form>
-                <fieldset width="800px">
+                <fieldset>
                     <legend>CART</legend>
                     <table width="900px" border=1 cellspacing=0 cellpadding=0 align="center">
-
-                        <tr name="Middle_List">
-
-
+                        <tr>
                             <td>
                                 <img src="raw/product.png">
                             </td>
+
                             <td>
                                 <h3>Product Details</h3>
-                                <p>Description</p>
+                                <label>Description</label>
                             </td>
+
                             <td>
                                 <h3>Product Price</h3>
-                                <p>Bdt.799</p>
+                                <label>Bdt.799</label>
                             </td>
                             <br>
                         </tr>
 
-                        <tr name="Middle_List">
-
-
+                        <tr>
                             <td>
                                 <img src="raw/product.png">
                             </td>
+
                             <td>
                                 <h3>Product Details</h3>
-                                <p>Description</p>
+                                <label>Description</label>
                             </td>
+
                             <td>
                                 <h3>Product Price</h3>
-                                <p>Bdt.899</p>
+                                <label>Bdt.899</label>
                             </td>
                             <br>
                         </tr>
 
-                        <tr name="Middle_List">
-
-
+                        <tr>
                             <td>
                                 <img src="raw/product.png">
                             </td>
+
                             <td>
                                 <h3>Product Details</h3>
-                                <p>Description</p>
+                                <label>Description</label>
                             </td>
+
                             <td>
                                 <h3>Product Price</h3>
-                                <p>Bdt.999</p>
+                                <label>Bdt.999</label>
                             </td>
                             <br>
                         </tr>
-
                     </table>
 
-    <tr>
-        <td align="center" colspan="3">
-            <h3>Total Item</h3>
-            <p>Price:2697.bdt</p>
-            <input type="Button" value="Proceed to checkout"/>
+                    <tr>
+                        <td align="center" colspan="3">
+                            <h3>Total Item</h3>
+                            <p>Price:2697.bdt</p>
+                            <input type="Button" value="Proceed to checkout"/>
+                        </td>
+                    </tr>
+                </fieldset>
+            </form>
         </td>
-
     </tr>
-    </fieldset>
-    </form>
 
     <tr>
 		<?php require "includes/copyright.inc.html"; ?>
