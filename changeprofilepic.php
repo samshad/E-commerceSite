@@ -40,7 +40,7 @@ if(!isset($_SESSION['currUser'])){
 	</tr>
 	
 	<tr>
-		<?php require "includes/copyright.inc.html"; ?>
+		<?php require "includes/footer.inc.html"; ?>
 	</tr>
 </table>
 </html>

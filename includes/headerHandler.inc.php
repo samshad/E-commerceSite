@@ -12,6 +12,7 @@
     if(!isset($_SESSION['currUser'])){
         echo '<td align = "right" colspan = "3" height = "30px">
                     <a href="index.php">HOME</a>|
+                    <a href="cart.php">CART</a>|
                     <a href="login.php">LOGIN</a>|
                     <a href="aboutus.php">ABOUT US</a>
                 </td>';
