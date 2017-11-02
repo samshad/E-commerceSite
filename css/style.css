@@ -1,10 +1,10 @@
-/* 
+/*
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark*/
+
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -15,7 +15,7 @@ b, i,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
+article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
     margin:0;
@@ -32,7 +32,7 @@ body {
 }
 
 article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
+footer,header,hgroup,menu,nav,section {
     display:block;
 }
 
@@ -68,7 +68,7 @@ ins {
 /* change colours to suit your needs */
 mark {
     background-color:#ff9;
-    color:#000; 
+    color:#000;
     font-style:italic;
     font-weight:bold;
 }
@@ -91,7 +91,7 @@ table {
 hr {
     display:block;
     height:1px;
-    border:0;   
+    border:0;
     border-top:1px solid #cccccc;
     margin:1em 0;
     padding:0;
@@ -102,6 +102,22 @@ input, select {
 }
 
 /************Start From here************/
+
+.fieldset{
+    height: auto;
+    display: block;
+    margin: 15px;
+    padding: 0.35em 0.75em 0.625em 0.75em;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+/**********Header**********/
 
 header{
     width: 100%;
@@ -132,6 +148,8 @@ header div nav ul li a{
     font-size: 17px;
 }
 
+/**********Menu**********/
+
 menu{
     width: 100%;
     height: auto;
@@ -146,7 +164,6 @@ menu div{
 }
 
 menu div nav{
-    float: center;
     margin: 5px;
     text-align:center;
 }
@@ -162,23 +179,57 @@ menu div nav ul li a{
     font-size: 17px;
 }
 
+/**********Section**********/
+
 section{
     width: 100%;
     height: auto;
 }
 
-.indexItems{
+.wrapper{
     width: 80%;
-    height: 530px;
+    height: 100%;
     margin: auto;
     border: 1px solid black;
     overflow: hidden;
     text-align: center;
 }
 
-.indexItems a{
+#indexItems a{
+    margin: 5px;
+}
+
+.cartItems{
+    overflow: hidden;
+    margin: auto;
+    height: auto;
+    text-align: center;
+}
+
+.cartTable{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#cartTable{
+    margin: auto;
+}
+
+#cartTotal{
     margin: 10px;
 }
+
+#cartTotal h3{
+    font-size: 18px;
+}
+
+#customProduct{
+    margin: 180px 0px;
+}
+
+/**********Footer**********/
 
 footer{
     width: 100%;
