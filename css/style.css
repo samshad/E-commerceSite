@@ -167,7 +167,7 @@ section{
     height: auto;
 }
 
-section div{
+.indexItems{
     width: 80%;
     height: 530px;
     margin: auto;
@@ -176,7 +176,7 @@ section div{
     text-align: center;
 }
 
-section div a{
+.indexItems a{
     margin: 10px;
 }
 

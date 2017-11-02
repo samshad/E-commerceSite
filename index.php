@@ -34,7 +34,7 @@
 </menu>
 
 <section>
-    <div>
+    <div class="indexItems">
         <a href="itemDetails.php"> <img src="raw/image.png" alt="Item1"> </a>
         <a href="itemDetails.php"> <img src="raw/image.png" alt="Item2"> </a>
         <a href="itemDetails.php"> <img src="raw/image.png" alt="Item3"> </a>
