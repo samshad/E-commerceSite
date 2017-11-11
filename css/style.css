@@ -103,7 +103,7 @@ input, select {
 
 /************Start From here************/
 
-.fieldset{
+/*fieldset{
     height: auto;
     display: block;
     margin: 15px;
@@ -115,6 +115,11 @@ input, select {
 table, tr, th, td {
     border: 1px solid black;
     text-align: center;
+}*/
+
+fieldset{
+    border: 1px solid black;
+    padding: 1.8%;
 }
 
 /**********Header**********/
@@ -188,7 +193,7 @@ section{
 
 .wrapper{
     width: 80%;
-    height: 90%;
+    min-height: 80%;
     margin: auto;
     border: 1px solid black;
     overflow: hidden;
@@ -230,14 +235,78 @@ section{
 }
 
 #login-form fieldset{
-    margin: 200px 30% 0px 30%;
+    margin: 10% 28% 10% 28%;
     width: 40%;
-    border: 1px solid black;
     padding: 1.2%;
 }
 
-#login-form fieldset button a{
+#login-form div{
+    margin: auto;
+}
+
+#login-input input{
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 3px;
+}
+
+#remFor{
+    padding: 8px;
+}
+
+#remFor a{
+    margin: 0px 10px 0px 50px;
+}
+
+#login-form fieldset a{
     text-decoration: none;
+}
+
+#signup-form{
+    margin: 30px 18%;
+    width: 60%;
+}
+
+.form input{
+    width: 200px;
+    height: auto;
+    padding: 5px;
+    margin: 3px;
+}
+
+.left-bar{
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+}
+
+.left-bar h1{
+    text-align: center;
+}
+
+.left-bar nav li{
+    margin-bottom: 7px;
+}
+
+.left-bar a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.right-bar{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.editField{
+    margin: 20px 30px;
+    width: 100%;
+    float: right;
 }
 
 /**********Footer**********/

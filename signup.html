@@ -35,21 +35,34 @@
 
 <section>
     <div class="wrapper">
-        <div id="login-form">
+        <div class="form">
             <form action="#" method="POST">
-                <fieldset>
-                    <legend>Login</legend>
-                    <div id="login-input">
-                        <input type="Text" name="username" maxlength="30" placeholder="User Name"/><br>
-                        <input type="Password" name="password" maxlength="50" placeholder="Password"/>
-                    </div>
+                <fieldset id="signup-form">
+                    <legend>Registration</legend>
+
+                    <input type="text" name="firstname" placeholder="First Name" maxlength="30"/>
+                    <input type="text" name="lastname" placeholder="Last Name" maxlength="30"/>
+
                     <hr>
-                    <div id="remFor">
-                        <input type="Checkbox"/><label>Remember Me</label>
-                        <a href="#">Forgot Password?</a><br>
-                    </div>
-                    <button type="Submit" name="signin">Sign in</button>
-                    <button type="Submit" name="signup" formaction="signup.html">Sign Up</button>
+
+                    <input type="text" name="email" maxlength="50" placeholder="Email Address"/>
+
+                    <hr>
+
+                    <input type="text" name="username" maxlength="30" placeholder="User Name"/>
+
+                    <hr>
+
+                    <input type="Password" name="password1" maxlength="50" placeholder="Password"/>
+
+                    <hr>
+
+                    <input type="Password" name="password2" maxlength="50" placeholder="Confirm Password"/>
+
+                    <hr>
+
+                    <button type="submit" name="submit">Sign Up</button>
+                    <button type="reset">Reset</button>
                 </fieldset>
             </form>
         </div>
