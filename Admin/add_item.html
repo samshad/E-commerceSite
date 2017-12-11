@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>E-CommerceSite</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+<header>
+    <div>
+        <nav>
+            <ul>
+                <a href="admin_home.html">HOME</a>|
+				<a href="official_info.html">OFFICIAL INFO</a>|
+                <a href="messages.html">MESSAGE</a>|
+				<a href="admin_profile.html">PROFILE</a>|
+				<a href="../index.html" >LOGOUT</a>|
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<menu>
+    <div>
+        <nav>
+            <ul>
+                <a href="item_list.html">PRODUCTS</a>|
+				<a href="accounts.html">ACCOUNTS</a>|
+				<a href="delivery_info.html">DELIVERY INFO</a>|
+				<a href="add_item.html">ADD ITEM</a>|
+				<a href="registrationinfo.html">REGESTRATION INFO</a>
+            </ul>
+        </nav>
+    </div>
+</menu>
+
+<section>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" method="POST">
+                <fieldset id="signup-form">
+                    <legend>Add Item</legend>
+                    <img src="../raw/product.png" alt="Item Picture" height="250" width="250"> <br>
+                    <label>Choose Item Picture</label>
+                    <input type="File" name="upload" value="Item Picture"/>
+                    <br>
+                    <input type="text" name="firstname" placeholder="Item Name" maxlength="30"/>
+                    <hr>
+                        
+                    <div class="itemcontainer" >
+                        <div style=" margin-left: 50px;">
+                            <p>Select Gender</p>
+                            <select name="gender" id="">
+                                <option name="" value="">Select</option>
+                                <option name="gender" value="MEN">MEN</option>
+                                <option name="gender" value="WOMEN">WOMEN</option>
+                            </select>
+                        </div>
+                    
+                        <div >
+                            <p>Select Age</p>
+                            <select name="age" id="">
+                                <option name="age" value="">Select</option>
+                                <option name="age" value="kid">KID</option>
+                                <option name="age" value="adult">ADULT</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Select Size</p>
+                            <select name="size" id="">
+                                <option name="size" value="">Select</option>
+                                <option name="size" value="small">Small</option>
+                                <option name="size" value="medium">Medium</option>
+                                <option name="size" value="large">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <div class="itemcontainer">
+                        <div>
+                           Buying Price <input type="text"/>
+                        </div>
+                            
+                        <div>
+                           Selling Price <input type="text"/>
+                        </div>
+                           
+                    </div>     
+                    <br>
+                    No. of Items<input type="text"/>
+                    <br><br>
+     
+                    <button type="submit" name="submit">ADD ITEM</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <p>Copyright &copy; 2017</p>
+    </div>
+</footer>
+</body>
+</html>

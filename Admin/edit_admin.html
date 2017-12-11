@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>E-CommerceSite</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+<header>
+    <div>
+        <nav>
+            <ul>
+                <a href="admin_home.html">HOME</a>|
+				<a href="official_info.html">OFFICIAL INFO</a>|
+                <a href="messages.html">MESSAGE</a>|
+				<a href="admin_profile.html">PROFILE</a>|
+				<a href="../index.html" >LOGOUT</a>|
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<menu>
+    <div>
+        <nav>
+            <ul>
+                <a href="item_list.html">PRODUCTS</a>|
+				<a href="accounts.html">ACCOUNTS</a>|
+				<a href="delivery_info.html">DELIVERY INFO</a>|
+				<a href="add_item.html">ADD ITEM</a>|
+				<a href="registrationinfo.html">REGESTRATION INFO</a>
+            </ul>
+        </nav>
+    </div>
+</menu>
+
+<section>
+    <div class="wrapper">
+        <div id="profile">
+            <div class="left-bar">
+                <h1>Profile</h1>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="admin_profile.html">View Profile</a></li>
+                        <li><a href="edit_admin.html">Edit Profile</a></li>
+                        <li><a href="change_adminpic.html">Change Profile Picture</a></li>
+                        <li><a href="change_adminpassword.html">Change Password</a></li>
+                        <li><a href="../index.html">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-bar">
+                <div class="form">
+                    <form action="#" method="POST">
+                        <fieldset class="editField">
+                            <legend>Edit Profile</legend>
+                            <label>Name:</label>
+                            <input type="text" name="firstname" placeholder="First Name" maxlength="30"/>
+                            <input type="text" name="lastname" placeholder="Last Name" maxlength="30"/>
+
+                            <hr>
+
+                            <label>E-mail Address:</label>
+                            <input type="text" name="email" maxlength="50"/>
+
+                            <hr>
+
+                            <label>Mobile:</label>
+                            <input type="text" name="mobile" value="+88" maxlength="15"/>
+
+                            <hr>
+
+                            <label>Address:</label>
+                            <textarea name="address" cols="30" rows="3" maxlength="100"></textarea>
+                            <hr>
+
+                        
+
+                            <button type="submit" name="submit">Update</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <p>Copyright &copy; 2017</p>
+    </div>
+</footer>
+</body>
+</html>
