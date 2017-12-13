@@ -13,6 +13,7 @@
                 <a href="admin_home.html">HOME</a>|
 				<a href="official_info.html">OFFICIAL INFO</a>|
                 <a href="messages.html">MESSAGE</a>|
+                <a href="reports.html">REPORTS</a>|
 				<a href="admin_profile.html">PROFILE</a>|
 				<a href="../index.html" >LOGOUT</a>|
             </ul>
@@ -40,33 +41,40 @@
             <div  style="width: 70%; height: 100%;"> <!--class="right-bar"> -->
                 <br>
                 <fieldset class="edititemField">
-                    <input type="text" placeholder="Search Delivery" />
+                    <input type="text" placeholder="Search Delivery by ID" />
 				    <hr>
                     <legend>Delivery List</legend>
                     <table border=1 cellspacing=0 cellpadding=0 >
                         <th>Delivery ID.</th>
-						<th>Cart ID.</th>
-						<th>Customer ID</th>
+						<th>Customer Name</th>
 						<th>Delivery Man</th>
 						<th>Status</th>
-						<th>Delivery Date</th>			
+						<th>Details</th>
+						<th>Action</th>		
 					
 						<tr border=1 cellpadding=0>
 						    <td>5011</td>
-							<td>2010</td>
-							<td>1102</td>
 							<td>Akib</td>
+							<td>Rimu</td>
 							<td>Delivered</td>
-							<td>5/6/17</td>
+							<td>
+							    <a href= "cart_details.html"><input type="Button" value = "Details"  /></a>
+				            </td>
+							<th>-None-</th>
 						</tr>
 						
 						<tr border=1 cellpadding=1>
 						    <td>5012</td>
-							<td>2011</td>
-							<td>1103</td>
 							<td>Rafat</td>
+							<td>Rakib</td>
 							<td>Pending</td>
-							<td>10/1/18</td>
+							<td>
+							    <a href= "cart_details.html"><input type="Button" value = "Details"  /></a>
+				            </td>
+				            
+							<td>
+							    <input type="Button" value = "Delivered"  />
+				            </td>
 						</tr>
 					
 				

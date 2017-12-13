@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>E-CommerceSite</title>
-    <link rel="stylesheet" type="text/css" href="..css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
@@ -12,6 +12,7 @@
                 <a href="admin_home.html">HOME</a>|
 				<a href="official_info.html">OFFICIAL INFO</a>|
                 <a href="messages.html">MESSAGE</a>|
+                <a href="reports.html">REPORTS</a>|
 				<a href="admin_profile.html">PROFILE</a>|
 				<a href="../index.html" >LOGOUT</a>|
             </ul>
@@ -35,64 +36,78 @@
 
 <section>
     <div class="wrapper">
-        <div id="profile">
-            <div class="left-bar">
-                <h1>Profile</h1>
-                <hr>
-                <nav>
-                    <ul>
-                        <li><a href="viewProfile.html">View Profile</a></li>
-                        <li><a href="editProfile.html">Edit Profile</a></li>
-                        <li><a href="changeProfilePic.html">Change Profile Picture</a></li>
-                        <li><a href="changePassword.html">Change Password</a></li>
-                        <li><a href="admin_home.html">Log out</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="right-bar">
-                <div class="form">
-                    <form action="#" method="POST">
-                        <fieldset class="editField">
-                            <legend>Edit Profile</legend>
-                            <label>Name:</label>
-                            <input type="text" name="firstname" placeholder="First Name" maxlength="30"/>
-                            <input type="text" name="lastname" placeholder="Last Name" maxlength="30"/>
-
-                            <hr>
-
-                            <label>E-mail Address:</label>
-                            <input type="text" name="email" maxlength="50"/>
-
-                            <hr>
-
-                            <label>Mobile:</label>
-                            <input type="text" name="mobile" value="+88" maxlength="15"/>
-
-                            <hr>
-
-                            <label>Address:</label>
-                            <textarea name="address" cols="30" rows="3" maxlength="100"></textarea>
-
-                            <hr>
-
-                            <label>Gender:</label>
-                            <select name = "gender">
-                                <option value="Male">Male</option>
-                                <option value="Female">Female</option>
-                                <option value="Other">Other</option>
+        <div class="form">
+            <form action="#" method="POST">
+                <fieldset id="signup-form">
+                    <legend>Edit Item</legend>
+                    <img src="../raw/product.png" alt="Item Picture" height="250" width="250"> <br>
+                    <label>Choose Item Picture</label>
+                    <input type="File" name="upload" value="Item Picture"/>
+                    <br>
+                    <input type="text" name="firstname" placeholder="Item Name" maxlength="30"/>
+                    <hr>
+                        
+                    <div class="itemcontainer" >
+                        <div style=" margin-left: 50px;">
+                            <p>Select Gender</p>
+                            <select name="gender" id="">
+                                <option name="" value="">Select</option>
+                                <option name="gender" value="MEN">MEN</option>
+                                <option name="gender" value="WOMEN">WOMEN</option>
                             </select>
-
-                            <hr>
-
-                            <label>Date of Birth:</label>
-
-                            <hr>
-
-                            <button type="submit" name="submit">Update</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
+                        </div>
+                    
+                        <div>
+                            <p>Select Age</p>
+                            <select name="age" id="">
+                                <option name="age" value="">Select</option>
+                                <option name="age" value="kid">KID</option>
+                                <option name="age" value="adult">ADULT</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Select Type</p>
+                            <select name="type" id="">
+                                <option name="type" value="">Select</option>
+                                <option name="type" value="shirt">Shirt</option>
+                                <option name="type" value="pant">Pant</option>
+                                <option name="type" value="tshirt">Tshirt</option>
+                                <option name="type" value="saree">Saree</option>
+                                <option name="type" value="skirt">Skirt</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Select Size</p>
+                            <select name="size" id="">
+                                <option name="size" value="">Select</option>
+                                <option name="size" value="small">Small</option>
+                                <option name="size" value="medium">Medium</option>
+                                <option name="size" value="large">Large</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <br><br>
+                    <div class="itemcontainer">
+                        <div>
+                           Buying Price <input type="text"/>
+                        </div>
+                            
+                        <div>
+                           Selling Price <input type="text"/>
+                        </div>
+                           
+                    </div>     
+                    <br>
+                    No. of Items<input type="text"/>
+                    <br><br>
+     
+                    <button type="submit" name="submit">Edit ITEM</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
         </div>
     </div>
 </section>

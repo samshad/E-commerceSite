@@ -33,73 +33,82 @@
 </menu>
 
 <section>
-    <div class="cartItems">
-        <div class="wrapper">
-            <form>
-                <fieldset class="fieldset">
+    <div class="wrapper">
+        <div id="profile">
+            <div class="left-bar">
+                <h1>Profile</h1>
+                <hr>
+                <nav>
+                    <ul>
+                        <li><a href="viewProfile.html">View Profile</a></li>
+                        <li><a href="editProfile.html">Edit Profile</a></li>
+                        <li><a href="changeProfilePic.html">Change Profile Picture</a></li>
+                        <li><a href="changePassword.html">Change Password</a></li>
+                        <li><a href="cart_history.html">Cart History</a></li>
+                        <li><a href="index.html">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-bar">
+                 <fieldset class="fieldset">
                     <legend class="legend">CART</legend>
                     <div class="cartTable">
                         <table id="cartTable">
                             <tr>
                                 <td>
-                                    <img src="raw/product.png">
+                                    <img src="raw/cart.png" height="128">
                                 </td>
             
                                 <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <a href= "cart.html"><input type="Button" value = "Cart Details" /></a>
                                 </td>
-            
+                                
                                 <td>
-                                    <h3>Product Price</h3>
-                                    <label>Bdt.799</label>
+                                    <h3>Delivery Date</h3>
+                                    <label>10/12/17</label>
                                 </td>
+                                
                                 <br>
                             </tr>
             
                             <tr>
                                 <td>
-                                    <img src="raw/product.png">
+                                    <img src="raw/cart.png" height="128">
                                 </td>
             
                                 <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <a href= "cart.html"><input type="Button" value = "Cart Details" /></a>
                                 </td>
-            
+                                
                                 <td>
-                                    <h3>Product Price</h3>
-                                    <label>Bdt.899</label>
+                                    <h3>Delivery Date</h3>
+                                    <label>27/6/10</label>
                                 </td>
+                                
                                 <br>
                             </tr>
             
                             <tr>
                                 <td>
-                                    <img src="raw/product.png">
+                                    <img src="raw/cart.png" height="128">
                                 </td>
-            
+                                
                                 <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <a href= "cart.html"><input type="Button" value = "Cart Details" /></a>
                                 </td>
-            
+                                
                                 <td>
-                                    <h3>Product Price</h3>
-                                    <label>Bdt.999</label>
+                                    <h3>Delivery Date</h3>
+                                    <label>12/7/16</label>
                                 </td>
+                                
                                 <br>
                             </tr>
                         </table>
                     </div>
-        
-                    <div id="cartTotal">
-                        <h3>Total Item</h3>
-                        <p>Price:2697.bdt</p>
-                        <button type="submit" name="submit" formaction="payment.html">Proceed to checkout</button>
-                    </div>
+    
                 </fieldset>
-            </form>
+            </div>
         </div>
     </div>
 </section>

@@ -1,9 +1,7 @@
-
-
 <html>
 <head>
     <title>E-CommerceSite</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -11,12 +9,11 @@
     <div>
         <nav>
             <ul>
-                <a href="admin_home.html">HOME</a>|
-				<a href="official_info.html">OFFICIAL INFO</a>|
-                <a href="messages.html">MESSAGE</a>|
-                <a href="messages.html">REPORTS</a>|
-				<a href="admin_profile.html">PROFILE</a>|
-				<a href="../index.html" >LOGOUT</a>|
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="search.html">SEARCH</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
             </ul>
         </nav>
     </div>
@@ -26,11 +23,10 @@
     <div>
         <nav>
             <ul>
-                <a href="item_list.html">PRODUCTS</a>|
-				<a href="accounts.html">ACCOUNTS</a>|
-				<a href="delivery_info.html">DELIVERY INFO</a>|
-				<a href="add_item.html">ADD ITEM</a>|
-				<a href="registrationinfo.html">REGESTRATION INFO</a>
+                <li><a href="index.html">WOMEN</a></li>
+                <li><a href="index.html">MEN</a></li>
+                <li><a href="index.html">KID</a></li>
+                <li><a href="custom.html">CUSTOM</a></li>
             </ul>
         </nav>
     </div>
@@ -39,16 +35,13 @@
 <section>
     <div class="cartItems">
         <div class="wrapper">
-            
             <div>
            <fieldset>
             <legend>Search</legend>
             <form action="">
-              <input type="text" placeholder="Search Item" />
-              <button type="submit" name="submit" formaction="item_list.html">Search</button>
-           </form>
-           <br>
-            <form action="">
+                <input type="text" placeholder="Search Item" />
+                <button type="submit" name="submit" formaction="search.html">Search</button>
+                <hr>
                 <div class="itemcontainer" >
                         <div style=" margin-left: 50px;">
                             <p>Select Gender</p>
@@ -75,6 +68,8 @@
                                 <option name="type" value="shirt">Shirt</option>
                                 <option name="type" value="pant">Pant</option>
                                 <option name="type" value="tshirt">Tshirt</option>
+                                <option name="type" value="tshirt">Saree</option>
+                                <option name="type" value="tshirt">Skirt</option>
                             </select>
                         </div>
                         
@@ -89,7 +84,7 @@
                         </div>
                     </div>
                     <br><br>
-                    <button type="submit" name="submit" formaction="item_list.html">Search</button>
+                    <button type="submit" name="submit" formaction="search.html">Search</button>
             </form>
             
            </fieldset>
@@ -101,12 +96,7 @@
                         <table id="cartTable">
                             <tr>
                                 <td>
-                                    <img src="../raw/product.png">
-                                </td>
-            
-                                <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <img src="raw/product.png">
                                 </td>
             
                                 <td>
@@ -122,12 +112,7 @@
             
                             <tr>
                                 <td>
-                                    <img src="../raw/product.png">
-                                </td>
-            
-                                <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <img src="raw/product.png">
                                 </td>
             
                                 <td>
@@ -143,12 +128,7 @@
             
                             <tr>
                                 <td>
-                                    <img src="../raw/product.png">
-                                </td>
-            
-                                <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <img src="raw/product.png">
                                 </td>
             
                                 <td>
@@ -165,12 +145,7 @@
                             
                              <tr>
                                 <td>
-                                    <img src="../raw/product.png">
-                                </td>
-            
-                                <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <img src="raw/product.png">
                                 </td>
             
                                 <td>
@@ -187,12 +162,7 @@
                             
                              <tr>
                                 <td>
-                                    <img src="../raw/product.png">
-                                </td>
-            
-                                <td>
-                                    <h3>Product Details</h3>
-                                    <label>Description</label>
+                                    <img src="raw/product.png">
                                 </td>
             
                                 <td>

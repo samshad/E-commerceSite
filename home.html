@@ -5,16 +5,17 @@
 </head>
 
 <body>
+
 <header>
     <div>
         <nav>
             <ul>
-				<li>Hello X</li>
                 <li><a href="home.html">HOME</a></li>
                 <li><a href="cart.html">CART</a></li>
-                <li><a href="item_list.html">Search</a></li>
-                <li><a href="viewProfile.html">Profile</a></li>
+                <li><a href="viewProfile.html">PROFILE</a></li>
+                <li><a href="search.html">SEARCH</a></li>
                 <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="index.html">LOGOUT</a></li>
             </ul>
         </nav>
     </div>
@@ -24,11 +25,9 @@
     <div>
         <nav>
             <ul>
-               <li><a href="home.html">WOMEN</a></li>
-                <li><a href="home.html">MEN</a></li>
-                <li><a href="home.html">T-SHIRT</a></li>
-                <li><a href="home.html">SHIRT</a></li>
-                <li><a href="home.html">PANT</a></li>
+                <li><a href="index.html">WOMEN</a></li>
+                <li><a href="index.html">MEN</a></li>
+                <li><a href="index.html">KID</a></li>
                 <li><a href="custom.html">CUSTOM</a></li>
             </ul>
         </nav>
@@ -37,7 +36,16 @@
 
 <section>
     <div class="wrapper">
-        <div id="indexItems">
+      <br>
+      <form action="">
+          <input type="text" placeholder="Search Item" />
+          <button type="submit" name="submit" formaction="search.html">Search</button>
+      </form>
+      
+      <hr>
+       <fieldset>
+            <legend>New Arrival</legend>
+            <div id="indexItems">
             <a href="item_details.html"> <img src="raw/image.png" alt="Item1"> </a>
             <a href="item_details.html"> <img src="raw/image.png" alt="Item2"> </a>
             <a href="item_details.html"> <img src="raw/image.png" alt="Item3"> </a>
@@ -45,15 +53,27 @@
             <a href="item_details.html"> <img src="raw/image.png" alt="Item5"> </a>
             <a href="item_details.html"> <img src="raw/image.png" alt="Item6"> </a>
             <a href="item_details.html"> <img src="raw/image.png" alt="Item7"> </a>
-            <br>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item8"> </a>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item9"> </a>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item10"> </a>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item11"> </a>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item12"> </a>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item13"> </a>
-            <a href="item_details.html"> <img src="raw/image.png" alt="Item14"> </a>
+            
         </div>
+       </fieldset>
+        
+        
+        <fieldset>
+            <legend>Popular</legend>
+            <div id="indexItems">
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item1"> </a>
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item2"> </a>
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item3"> </a>
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item4"> </a>
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item5"> </a>
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item6"> </a>
+            <a href="item_details.html"> <img src="raw/image.png" alt="Item7"> </a>
+        
+        </div>
+       </fieldset>
+       
+       
+       
     </div>
 </section>
 

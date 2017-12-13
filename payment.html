@@ -35,17 +35,29 @@
 <section>
     <div class="wrapper">
         <div id="login-form">
-            <form action="#" method="POST">
+            <form action="home.html" method="POST">
                 <fieldset>
-                    <legend>Forgot Password</legend>
-                    <div id="login-input">
-                        <input type="Text" name="email" maxlength="30" placeholder="Email"/><br>
-                  
-                    </div>
+                    <legend>Checkout</legend>
+                        <div id="cartTotal">
+                            <h1>Total Item:4</h1>
+                            <p>Price:2697.bdt</p>
+                        
+                        </div>
+                        <br><br>
+                        <div>
+                            <p>Payment Method</p>
+                            <select name="size" id="">
+                                <option name="payment" value="">Select</option>
+                                <option name="card" value="small">Card</option>
+                                <option name="size" value="medium">Cash</option>
+                            </select>
+                            <br><br>
+                            <input type="text" name="cardno" maxlength="30" placeholder="Card No."/>
+                        </div>
+                        <br><br>
                     <hr>
-               
-                    <button type="Submit" name="signin">Send</button>
-                 
+                    <button type="submit" name="submit" formaction="home.html">Confirm</button>
+                    
                 </fieldset>
             </form>
         </div>

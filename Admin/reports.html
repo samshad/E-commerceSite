@@ -1,0 +1,152 @@
+
+
+<html>
+<head>
+    <title>E-CommerceSite</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+<header>
+    <div>
+        <nav>
+            <ul>
+                <a href="admin_home.html">HOME</a>|
+				<a href="official_info.html">OFFICIAL INFO</a>|
+                <a href="messages.html">MESSAGE</a>|
+                <a href="reports.html">REPORTS</a>|
+				<a href="admin_profile.html">PROFILE</a>|
+				<a href="../index.html" >LOGOUT</a>|
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<menu>
+    <div>
+        <nav>
+            <ul>
+                <a href="item_list.html">PRODUCTS</a>|
+				<a href="accounts.html">ACCOUNTS</a>|
+				<a href="delivery_info.html">DELIVERY INFO</a>|
+				<a href="add_item.html">ADD ITEM</a>|
+				<a href="registrationinfo.html">REGESTRATION INFO</a>
+            </ul>
+        </nav>
+    </div>
+</menu>
+
+
+<section>
+    <div class="wrapper">
+        <div id="profile">
+            <div  style="width: 70%; height: 100%;"> <!--class="right-bar"> -->
+                <fieldset class="edititemField">
+                    <legend>Reports</legend>
+                       <div class="itemcontainer" >
+                        <div>
+                            <p>Selling Reports</p>
+                            <select name="size" id="">
+                                <option name="report" value="">Select</option>
+                                <option name="daily" value="small">Daily</option>
+                                <option name="weekly" value="medium">Weekly</option>
+                                <option name="monthly" value="small">Monthly</option>
+                                <option name="yearly" value="medium">Yearly</option>
+                            </select>
+                        </div>
+                        
+                        
+                        <div style=" margin-left: 50px;">
+                            <p>Miscellaneous Reports</p>
+                            <select name="miscellaneous" id="">
+                                <option name="" value="">Select</option>
+                                <option name="miscellaneous" value="top_customers">Top Customer</option>
+                                <option name="miscellaneous" value="top_products">Top Selling Products</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Top Selling Type</p>
+                            <select name="type" id="">
+                                <option name="type" value="">Select</option>
+                                <option name="type" value="shirt">Shirt</option>
+                                <option name="type" value="pant">Pant</option>
+                                <option name="type" value="tshirt">Tshirt</option>
+                                <option name="type" value="tshirt">Saree</option>
+                                <option name="type" value="tshirt">Skirt</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <br><br>
+                            <button type="submit" name="submit" formaction="home.html">Search</button>  
+                    <br><hr>          
+                        
+                    <table border=1 cellspacing=0 cellpadding=0 >
+						<th>Date</th>
+						<th>Total Sales (BDT.)</th>
+						<th>No. of Transactions</th>
+						<th>Details</th>
+			
+					
+						<tr border=1 cellpadding=0>
+							<td>10/11/2016</td>
+							<td>7000.00</td>
+							<td>5</td>
+							<td>
+							    <a href= "carts.html"><input type="Button" value = "Details" name="carts" /></a>
+				            </td>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+							<td>9/11/2016</td>
+							<td>10000.00</td>
+							<td>10</td>
+							<td>
+							    <a href= "carts.html"><input type="Button" value = "Details" name="carts" /></a>
+				            </td>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+							<td>8/11/2016</td>
+							<td>8000.00</td>
+							<td>6</td>
+							<td>
+							    <a href= "carts.html"><input type="Button" value = "Details" name="carts" /></a>
+				            </td>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+							<td>7/11/2016</td>
+							<td>4000.00</td>
+							<td>2</td>
+							<td>
+							    <a href= "carts.html"><input type="Button" value = "Details" name="carts" /></a>
+				            </td>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+							<td>6/11/2016</td>
+							<td>20000.00</td>
+							<td>10</td>
+							<td>
+							    <a href= "carts.html"><input type="Button" value = "Details" name="carts" /></a>
+				            </td>
+						</tr>
+					
+				
+				</table>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div>
+        <p>Copyright &copy; 2017</p>
+    </div>
+</footer>
+</body>
+</html>

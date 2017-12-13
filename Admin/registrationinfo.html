@@ -13,6 +13,7 @@
                 <a href="admin_home.html">HOME</a>|
 				<a href="official_info.html">OFFICIAL INFO</a>|
                 <a href="messages.html">MESSAGE</a>|
+                <a href="reports.html">REPORTS</a>|
 				<a href="admin_profile.html">PROFILE</a>|
 				<a href="../index.html" >LOGOUT</a>|
             </ul>
@@ -47,7 +48,8 @@
                 </nav>
             </div>
             <div class="right-bar">
-                <fieldset class="editField">
+               <form action="">
+                   <fieldset class="editField">
                     <legend>Customer List</legend>
                     <table  border=1 cellspacing=0 cellpadding=0 align="center">
 					
@@ -66,7 +68,9 @@
 							<td>rafie@ymail.com</td>
 							<td><input type="Button" value = "Accept" /></td>
 							<td><input type="Button" value = "Decline" /></td>
-							<td><input type="Button" value = "Details"  /></td>
+							<td>
+							    <a href= "registration_details.html"><input type="Button" value = "Details" name="carts" /></a>
+				            </td>
 						</tr>
 						
 						<tr>
@@ -75,12 +79,14 @@
 							<td>shuvo@gmail.com</td>
 							<td><a href= ""><input type="Button" value = "Accept" /></a></td>
 							<td><a href= ""><input type="Button" value = "Decline" /></a></td>
-							<td><a href= "RequestDetails.html"><input type="Button" value = "Details" /></a></td>
+							<td><a href= "registration_details.html"><input type="Button" value = "Details" /></a></td>
 						</tr>
 				
 				</table>
 
                 </fieldset>
+               </form>
+                
             </div>
         </div>
     </div>
