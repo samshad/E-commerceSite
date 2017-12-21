@@ -1,0 +1,147 @@
+<html>
+<head>
+     <title>E-CommerceSite</title>
+     <link rel="stylesheet" type="text/css" href="../css/Homedesign.css">
+     <link rel="stylesheet" type="text/css" href="../css/style.css">
+     <link rel="stylesheet" type="text/css" href="../css/test.css">
+     <link rel="stylesheet" type="text/css" href="../css/header.css">
+     <link rel="stylesheet" type="text/css" href="../css/menu.css">
+     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+     
+</head>
+
+<body>
+
+<header class="header">
+    <div>
+        <nav>
+            <ul class="header_ul" >
+                <li><a href="home.html"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"></i></a></li>   
+                <li><a href="admin_profile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
+                    <ul class="dropdowns">
+                        <li><a href="admin_profile.html"><font size=2> View Profile</font></a></li>
+                        <li><a href="edit_admin.html"><font size=2> Edit Profile</font></a></li>
+                        <li><a href="#"><font size=2> Logout</font></a></li>     
+                    </ul> 
+                </li>    
+                <li><a href="search.html"><i class="fa fa-search" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="color: white"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<br><br><br><br>
+<hr class="hr_border"><br>
+<section>
+    <div class="wrapper">
+        <div id="profile">
+            <div class="left-bar">
+                
+                <div style=" margin:5px; margin-left:90px">
+				    <img class="img-circle" src="../raw/propic.jpg" style="margin:15px">
+			    </div>
+                <h1 style="color: antiquewhite">Nafeez Zawad Hossain</h1>
+                <hr>
+                <nav>
+                    <ul style="background-color:#444141;">
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"><font face="Arial" style="margin:10px">Dashboard</font></i></a>
+                        </li> <br><br>
+                        
+                        <li>
+                            <a href="messages.html"><i class="fa fa-info-circle" aria-hidden="true"><font face="Arial" style="margin:10px">Official Info</font></i></a>
+                            <ul class="dropdowns" style="min-width: 100%;">
+                                <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Customer List</font></a></li>
+                                <hr>
+                                <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Employee List</font></a></li>
+                                <hr>
+                                <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Item List</font></a></li>
+                                <hr>
+                            </ul>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="edit_admin.html"><i class="fa fa-file-text" aria-hidden="true"><font face="Arial" style="margin:10px">Reports</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="change_adminpassword.html"><i class="fa fa-cart-arrow-down" aria-hidden="true"><font face="Arial" style="margin:10px">Delivery Info</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="change_adminpassword.html"><i class="fa fa-registered" aria-hidden="true"><font face="Arial" style="margin:10px">Registration Info</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="change_adminpassword.html"><i class="fa fa-plus-circle" aria-hidden="true"><font face="Arial" style="margin:10px">Add Item</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="home.html"><i class="fa fa-sign-out" aria-hidden="true"><font face="Arial" style="margin:10px">Logout</font></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+
+            <div class="right-bar" style="overflow-y: scroll; position: relative; left: 20; width: 800px;height: 500px">
+               
+                    
+                    <div>
+                        <img src="../raw/product.png" alt="Item Picture" height="100" width="100"> <br>
+                    </div>
+                    <hr>
+
+                    <label>Item Name: Shirt</label>
+                    <hr>
+
+                    <label>Item ID:1120</label>
+                    <hr>
+
+                    <label>Item Gender:male</label>
+                    <hr>
+
+                    <label>Item Age:20</label>
+                    <hr>
+
+                    <label>Item Size:XL</label>
+                    <hr>
+
+                    <label>Buying Price:620</label>
+                    <hr>
+
+                    <label>Selling Price:1000</label>
+                    <hr>
+                    
+                    <label>Item Available:5</label>
+                    <hr>
+                    
+                    <label>Items Sold:1</label>
+                    <hr>
+                    <form action="edit_item.html">
+                        <button  type="submit">Edit Item</button>
+                    </form>
+               
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background-color:#444141;">
+    <div class="left_footer" >
+         <form><font face="Arial Black" color="white" style="margin:5" >STAY CONNECTED</font><input type="Text" id="bEmail"placeholder="Enter Your Email"/><input type="Submit" value="s"/></form>
+    </div>
+   
+    <div class="right_footer">
+        <img src = "../Icon/facebook.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/google.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/twitter.png" height="30px" width="30px" style="margin:15">
+    </div>   
+</footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+menu{
+	clear: right;
+	float:center;
+    width: 100%;
+    height: auto;
+	//background-color:black;
+}
+
+menu div{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    //border: 1px solid black;
+    //overflow: hidden;
+}
+
+menu div nav{
+	
+    margin: 5px;
+    text-align:center;
+	
+}
+
+menu div nav ul li{
+    display: inline-block;
+    margin-left: 7px;
+	font-size: 17px;
+	
+}
+
+menu div nav ul li a{
+    text-decoration: none;
+    font-family: arial;
+	font-weight: 500;
+    
+}
+
+  ul li ul.dropdowns{
+        min-width: 100%; /* Set width of the dropdown */
+		min-height:20%;
+        background: white;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+		font-size: 15px;
+    }
+	
+menu.home{
+	background-color;black;
+
+}	
+
+.menu_font{
+	margin:15;
+}

@@ -1,0 +1,245 @@
+<html>
+<head>
+     <title>E-CommerceSite</title>
+     <link rel="stylesheet" type="text/css" href="../css/Homedesign.css">
+     <link rel="stylesheet" type="text/css" href="../css/style.css">
+     <link rel="stylesheet" type="text/css" href="../css/test.css">
+     <link rel="stylesheet" type="text/css" href="../css/header.css">
+     <link rel="stylesheet" type="text/css" href="../css/menu.css">
+     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+     
+</head>
+
+<body>
+
+<header class="header">
+    <div>
+        <nav>
+            <ul class="header_ul" >
+                <li><a href="home.html"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"></i></a></li>   
+                <li><a href="admin_profile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
+                    <ul class="dropdowns">
+                        <li><a href="admin_profile.html"><font size=2> View Profile</font></a></li>
+                        <li><a href="edit_admin.html"><font size=2> Edit Profile</font></a></li>
+                        <li><a href="#"><font size=2> Logout</font></a></li>     
+                    </ul> 
+                </li>    
+                <li><a href="search.html"><i class="fa fa-search" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="color: white"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<br><br><br><br>
+<hr class="hr_border"><br>
+<section>
+    <div class="wrapper">
+        <div id="profile">
+            <div class="left-bar">
+                
+                <div style=" margin:5px; margin-left:90px">
+				    <img class="img-circle" src="../raw/propic.jpg" style="margin:15px">
+			    </div>
+                <h1 style="color: antiquewhite">Nafeez Zawad Hossain</h1>
+                <hr>
+                <nav>
+                    <ul style="background-color:#444141;">
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"><font face="Arial" style="margin:10px">Back To Dashboard</font></i></a>
+                        </li> <br><br>
+                        
+                        <li>
+                            <a href="employee_list.html"><i class="fa fa-user" aria-hidden="true" style="color: white"><font face="Arial" style="margin:10px">Employee List</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="customer_list.html"><i class="fa fa-user" aria-hidden="true" style="color: white"><font face="Arial" style="margin:10px">Customer List</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="item_list.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"><font face="Arial" style="margin:10px">Item List</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="home.html"><i class="fa fa-sign-out" aria-hidden="true"><font face="Arial" style="margin:10px">Logout</font></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+
+            <div class="right-bar">
+                     <form action="">
+                <div class="itemcontainer" >
+                        <div style=" ">
+                            <p>Select Gender</p>
+                            <select name="gender" id="">
+                                <option name="" value="">Select</option>
+                                <option name="gender" value="MEN">MEN</option>
+                                <option name="gender" value="WOMEN">WOMEN</option>
+                            </select>
+                        </div>
+                    
+                        <div >
+                            <p>Select Age</p>
+                            <select name="age" id="">
+                                <option name="age" value="">Select</option>
+                                <option name="age" value="kid">KID</option>
+                                <option name="age" value="adult">ADULT</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Select Type</p>
+                            <select name="type" id="">
+                                <option name="type" value="">Select</option>
+                                <option name="type" value="shirt">Shirt</option>
+                                <option name="type" value="pant">Pant</option>
+                                <option name="type" value="tshirt">Tshirt</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Select Size</p>
+                            <select name="size" id="">
+                                <option name="size" value="">Select</option>
+                                <option name="size" value="small">Small</option>
+                                <option name="size" value="medium">Medium</option>
+                                <option name="size" value="large">Large</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <p>Sort</p>
+                            <select name="type" id="">
+                                <option name="type" value="">Select</option>
+                                <option name="type" value="shirt">Price Ascending</option>
+                                <option name="type" value="pant">Price Descending</option>
+                                <option name="type" value="tshirt">Most Sold (ASC)</option>
+                                <option name="type" value="tshirt">Most Sold (DSC)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br><br>
+                    <button type="submit" name="submit" formaction="item_list.html">Search</button><br>
+                    <hr>
+                    <b>Filters: </b>
+                    <button type="submit" name="" formaction="">Men</button>
+                    <button type="submit" name="" formaction="">Shirt</button>
+                    <button type="submit" name="" formaction="">Medium</button>
+                    <br><br>
+                    <input type="text" placeholder="Search Item" />
+                    <button type="submit" name="submit" formaction="item_list.html">Search</button><br>
+				    <br>
+            </form>
+                   <hr><br><br>
+                    <fieldset class="editField">
+                    
+                    <legend>Item List</legend>
+                    <table border=1 cellspacing=0 cellpadding=1 style="text-align:center;">
+						<th>Id no.</th>
+						<th>Name</th>
+						<th>Gender</th>
+                        <th>Available</th>
+				        <th>Details</th>
+						<th>Delete</th>
+			            <th>Edit</th>
+					
+						<tr border=1 cellpadding=1>
+						    <form>
+                                <td>1112</td>
+                                <td>Saree</td>
+                                <td>Female</td>
+                                <td>20</td>
+                                <td>
+							        <button type="submit" name="submit" formaction="item_details.html">Details</button>
+                                </td>
+                                 <td>
+							        <button type="submit" name="submit" formaction="">Delete</button>
+                                </td>
+                                <td>
+							        <button type="submit" name="submit" formaction="edit_item.html">Edit</button>
+                                </td>
+                            </form>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+						    <form>
+                                <td>1115</td>
+                                <td>Shirt</td>
+                                <td>Male</td>
+                                 <td>10</td>
+                                <td>
+							        <button type="submit" name="submit" formaction="item_details.html">Details</button>
+                                </td>
+                                 <td>
+							        <button type="submit" name="submit" formaction="">Delete</button>
+                                </td>
+                                <td>
+							        <button type="submit" name="submit" formaction="edit_item.html">Edit</button>
+                                </td>
+                            </form>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+						    <form>
+                                <td>1116</td>
+                                <td>pant</td>
+                                <td>Male</td>
+                                 <td>50</td>
+                                <td>
+							        <button type="submit" name="submit" formaction="item_details.html">Details</button>
+                                </td>
+                                 <td>
+							        <button type="submit" name="submit" formaction="">Delete</button>
+                                </td>
+                                <td>
+							        <button type="submit" name="submit" formaction="edit_item.html">Edit</button>
+                                </td>
+                            </form>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+						    <form>
+                                <td>1119</td>
+                                <td>Tshirt</td>
+                                <td>Male</td>
+                                 <td>50</td>
+                                <td>
+							        <button type="submit" name="submit" formaction="item_details.html">Details</button>
+                                </td>
+                                 <td>
+							        <button type="submit" name="submit" formaction="">Delete</button>
+                                </td>
+                                <td>
+							        <button type="submit" name="submit" formaction="edit_item.html">Edit</button>
+                                </td>
+                            </form>
+						</tr>
+					
+				
+				</table>
+                </fieldset>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background-color:#444141;">
+    <div class="left_footer" >
+         <form><font face="Arial Black" color="white" style="margin:5" >STAY CONNECTED</font><input type="Text" id="bEmail"placeholder="Enter Your Email"/><input type="Submit" value="s"/></form>
+    </div>
+   
+    <div class="right_footer">
+        <img src = "../Icon/facebook.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/google.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/twitter.png" height="30px" width="30px" style="margin:15">
+    </div>   
+</footer>
+</body>
+</html>
