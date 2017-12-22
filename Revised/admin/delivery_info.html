@@ -1,0 +1,149 @@
+<html>
+<head>
+     <title>E-CommerceSite</title>
+     <link rel="stylesheet" type="text/css" href="../css/Homedesign.css">
+     <link rel="stylesheet" type="text/css" href="../css/style.css">
+     <link rel="stylesheet" type="text/css" href="../css/test.css">
+     <link rel="stylesheet" type="text/css" href="../css/header.css">
+     <link rel="stylesheet" type="text/css" href="../css/menu.css">
+     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+     
+</head>
+
+<body>
+
+<header class="header">
+    <div>
+        <nav>
+            <ul class="header_ul" >
+                <li><a href="home.html"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"></i></a></li>   
+                <li><a href="admin_profile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
+                    <ul class="dropdowns">
+                        <li><a href="admin_profile.html"><font size=2> View Profile</font></a></li>
+                        <li><a href="edit_admin.html"><font size=2> Edit Profile</font></a></li>
+                        <li><a href="#"><font size=2> Logout</font></a></li>     
+                    </ul> 
+                </li>    
+                <li><a href="search.html"><i class="fa fa-search" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="color: white"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<br><br><br><br>
+<hr class="hr_border"><br>
+<section>
+    <div class="wrapper">
+        <div id="profile">
+            <div class="left-bar">
+                
+                <div style=" margin:5px; margin-left:90px">
+				    <img class="img-circle" src="../raw/propic.jpg" style="margin:15px">
+			    </div>
+                <h1 style="color: antiquewhite">Nafeez Zawad Hossain</h1>
+                <hr>
+                <nav>
+                    <ul style="background-color:#444141;">
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"><font face="Arial" style="margin:10px">Dashboard</font></i></a>
+                        </li> <br><br>
+                        
+                        <li>
+                            <a href="official_info.html"><i class="fa fa-info-circle" aria-hidden="true"><font face="Arial" style="margin:10px">Official Info</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="reports.html"><i class="fa fa-file-text" aria-hidden="true"><font face="Arial" style="margin:10px">Reports</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="delivery_info.html"><i class="fa fa-cart-arrow-down" aria-hidden="true"><font face="Arial" style="margin:10px">Delivery Info</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="registration_info.html"><i class="fa fa-registered" aria-hidden="true"><font face="Arial" style="margin:10px">Registration Info</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="add_item.html"><i class="fa fa-plus-circle" aria-hidden="true"><font face="Arial" style="margin:10px">Add Item</font></i></a>
+                        </li><br><br>
+                        
+                        <li>
+                            <a href="home.html"><i class="fa fa-sign-out" aria-hidden="true"><font face="Arial" style="margin:10px">Logout</font></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <br>
+
+            <div class="right-bar" style="position: relative; right: 200">
+               
+                   <fieldset class="edititemField">
+                    <input type="text" placeholder="Search Delivery by ID" />
+				    <hr>
+                    <legend>Delivery List</legend>
+                    <table border=1 cellspacing=0 cellpadding=0 >
+                        <th>Delivery ID.</th>
+						<th>Customer Name</th>
+						<th>Delivery Man</th>
+						<th>Status</th>
+						<th>Details</th>
+						<th>Action</th>		
+					
+						<tr border=1 cellpadding=0>
+						    <td>5011</td>
+							<td>Akib</td>
+							<td>Rimu</td>
+							<td>Delivered</td>
+							<th>
+                                <form>
+                                    <button type="submit" name="submit" formaction="cart_details.html">Details</button>
+                                </form>
+				            </th>
+							<th>-None-</th>
+						</tr>
+						
+						<tr border=1 cellpadding=1>
+						    <td>5012</td>
+							<td>Rafat</td>
+							<td>Rakib</td>
+							<td>Pending</td>
+							<th>
+							    <form>
+                                    <button type="submit" name="submit" formaction="cart_details.html">Details</button>
+                                </form>
+				            </th>
+				            
+							<th>
+							    <form>
+                                    <button type="submit" name="submit" formaction="">Delivered</button>
+                                </form>
+				            </th>
+						</tr>
+					
+				
+				</table>
+                </fieldset>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background-color:#444141;">
+    <div class="left_footer" >
+         <form><font face="Arial Black" color="white" style="margin:5" >STAY CONNECTED</font><input type="Text" id="bEmail"placeholder="Enter Your Email"/><input type="Submit" value="s"/></form>
+    </div>
+   
+    <div class="right_footer">
+        <img src = "../Icon/facebook.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/google.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/twitter.png" height="30px" width="30px" style="margin:15">
+    </div>   
+</footer>
+</body>
+</html>
