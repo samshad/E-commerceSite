@@ -1,0 +1,311 @@
+#navimg{margin-top:4px;}
+	
+	input[type='Button'] { font-size: 24px; 
+								   background-color:#444141;
+								   color:white;
+								   font-family:Trebuchet MS;
+								   margin: 15px;
+								   width:800px}
+								   
+    input[type='Submit'] { font-size: 12px;
+								   background-image: url(Icon/send.png);
+								   background-color:#444141;
+								   color:white;
+								   font-family:Trebuchet MS;
+								   width:50px;
+								   height:25px;}
+	
+	#bEmail{ font-size: 18px;
+					 color:6B6565;
+					 font-family:Courier;}
+
+	input[type='text'] { font-size: 20px; }
+/*------------------NAVIGATION-------------*/ 
+	ul{
+        padding: 0;
+        list-style: none;
+        background: #444141;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: right;
+		color: white;
+		
+    }
+    ul li a{
+        display: block;
+        padding: 8px 10px;
+        color: white;
+        text-decoration: none;
+		font-family:Arial;
+		
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #939393;
+    }
+    ul li ul.dropdown{
+		
+        min-width:100%;
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        right: 0;
+		text-decoration:none;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+	
+    #navfront{
+			font-size:20;
+			font-weight:bold;
+	}
+
+	
+	#User input{
+			width:400px;
+			height:40px;
+			margin-top:5px;
+			margin-bottom:5px;
+			
+	}
+	
+	#User input[type="Submit"],input[type="Button"]{
+			background-color: 302F2F;
+			
+			color: White;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			cursor: pointer;
+	}
+	
+	
+
+	
+	#User.dropdown{
+		padding:5px;
+		width: 400px;
+		font-family:Arial,sans-serif;
+		border-style:solid;
+		
+		border-width:3px;
+		border-color:#CECACA;
+		border-top-color:grey;
+		background:white;
+		
+	}
+	#User hr{
+		color:black;
+		text-align: right;
+	}
+	#User h3,p{
+		font-family:Arial,sans-serif;
+	}
+	
+	.arrow
+		{
+			width: 0;
+			height: 0;
+			margin-left: 15px;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-bottom: 9px solid #F8F8F8;
+		}
+
+
+	
+     /*------------------HEADER-------------*/ 
+	 
+	
+	#menuop.dropdown{
+			padding:5px;
+			width: 200px;
+			font-family:Arial,sans-serif;
+			border-style:solid;
+			
+			border-width:3px;
+			border-color:#CECACA;
+			border-top-color:grey;
+			background:white;
+			
+    }
+	
+	#menuop ul.dropdown{
+			left:0;
+	}
+	
+	#Forher {
+		float: left;
+		margin: 20px;
+		
+	}
+	
+	#Forherl {
+		float: left;
+		margin-left: 130px;
+		margin-bottom: 20px;
+		
+	}
+	
+	/*------------------REGISTRATION-------------*/ 
+	
+	#regdiv{
+		
+		width:500px;
+		margin-left:500px;
+		
+	}
+	
+	#regdiv table td{
+		border-style:solid;
+		border-left:2px;
+		border-right:2px;
+		border-top:2px;
+		border-bottom-color:grey;
+	}
+	
+	#regdiv input[type="text"],input[type="Password"]{
+		//margin:5px;
+		//font-size:20px;
+		//width:400px;
+	}
+	
+	#regdiv input[type="Submit"],input[type="Button"]{
+			background-color: 302F2F;
+			border: none;
+			color: White;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			cursor: pointer;
+			width:100px;
+	}
+	
+	/*------------------CUSTOMER VIEW PROFILE-------------*/ 
+	
+	
+	#Sidebar{
+		float:left;
+		background:#444141;
+		height:800px;
+		width:300px;
+		margin:-15px;
+		margin-left:1px;
+		
+	}
+	
+	#Sidebar ul{
+        padding: 0;
+        list-style: none;
+        
+    }
+	
+	#Sidebar ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+		color: white;					 
+	}
+	
+	.img-circle{
+		border-radius:50%;
+		width:50px;
+		height:50px;
+	}
+	
+	#Sidebar ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+		color: white;
+		
+	}
+	
+	#Sidebar ul li a:hover{
+        color: #fff;
+        background: #939393;
+		width:280px;
+    }
+	
+	#Customer_Menu {
+			
+			float:left;
+			width:1100px;
+			height:700px;
+			margin:40px;
+			
+	}
+	
+	.ViewProfile_Profile{
+		
+		font-size:22;
+		font-family:Arial;
+		color:#444141;
+		margin:5px;
+		
+	}
+	
+	.ViewProfile_Profile2{
+		
+		font-size:22;
+		font-family:Arial;
+		color:#939393;
+		margin:5px;
+		
+	}
+	
+	
+	/*------------------        CART   -------------*/ 
+	
+	
+	#Checkout-bar{
+		float:right;
+		width:400px;
+		height:400px;
+		background:#EDEDED;
+		margin:40px;
+		
+	}
+	
+	.Checkout_Onside{
+		
+		font-size:16;
+		font-family:Arial;
+		color:#444141;
+		margin:5px;
+		
+	}
+	
+	.Checkout_Onside2{
+		
+		font-size:16;
+		font-family:Arial;
+		color:#444141;
+		margin:5px;
+	}
+	
+	#checkbutton input[type="button"]{
+		margin:5px;
+		font-size:30px;
+		width:400px;
+		
+	}
+	
+	#Cart_Menu{
+		float:right;
+		width:800px;
+		height:250px;
+		background:#EDEDED;
+		margin:40px;
+	}
+	
