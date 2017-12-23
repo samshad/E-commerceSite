@@ -65,7 +65,7 @@ echo '
    
         <div id="Cart_Menu">
             <div style="float:left">
-                <img src="../Image/productf1.jpg"  height="150px" width="150px" style="margin:50px">
+                <img src="Image/productf1.jpg"  height="150px" width="150px" style="margin:50px">
             </div>
 
             <div style="float:left ">
@@ -107,7 +107,7 @@ echo '
 
         <div id="Cart_Menu">
             <div style="float:left">
-                <img src="../Image/productf3.jpg"  height="150px" width="150px" style="margin:50px">
+                <img src="Image/productf3.jpg"  height="150px" width="150px" style="margin:50px">
             </div>
 
             <div style="float:left ">

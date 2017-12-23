@@ -4,8 +4,8 @@
 	</div>
 	
 	<div class="right_footer">
-		<img src = "../Icon/facebook.png" height="30px" width="30px" style="margin:15">
-		<img src = "../Icon/google.png" height="30px" width="30px" style="margin:15">
-		<img src = "../Icon/twitter.png" height="30px" width="30px" style="margin:15">
+		<img src = "Icon/facebook.png" height="30px" width="30px" style="margin:15">
+		<img src = "Icon/google.png" height="30px" width="30px" style="margin:15">
+		<img src = "Icon/twitter.png" height="30px" width="30px" style="margin:15">
 	</div>
 </footer>
