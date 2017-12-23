@@ -22,12 +22,20 @@
                 <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li> 
                 
                 <li><a href="viewProfile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
-                    <ul class="dropdowns">
-                        <li><a href="#"><font size=2> View Profile</font></a></li>
-                        <li><a href="#"><font size=2> Edit Profile</font></a></li>
-                        <li><a href="#"><font size=2> View History</font></a></li>
-                        <li><a href="#"><font size=2> Logout</font></a></li>     
-                    </ul>
+                   <ul class="dropdown" id="User" >
+							<form>
+                                <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
+                                <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
+                                <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
+                                <li style="text-align: center"><a href="forgot_password.html">Forgot Password?</a></li>
+                                <div style="text-align: center">
+                                    <button type="Submit" name="signin" formaction="home.html">Sign in</button>
+                                    <button type="Submit" name="signup" formaction="signup.html">Sign Up</button>	
+                                </div>
+                                	
+							</form>
+				    </ul>
+
                 
                 </li>    
                 <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i></a></li>
@@ -63,13 +71,13 @@
                         <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
                     </ul>
                 </li>    
-                <li><a href="index.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">KIDS</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">KIDS</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdowns">
-                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
                         <hr>
-                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
                         <hr>
-                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
                     </ul>
                 </li>
                 <li><a href="custom.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">Custom</font></a></li>
@@ -122,9 +130,9 @@
     </div>
 </section>
 
-	<footer style="position: static;">
-    <div class="left_footer">
-         <form><font face="Arial Black" color="white" style="margin:5" >STAY CONNECTED</font><input type="Text" id="bEmail"placeholder="Enter Your Email"/><input type="Submit" value="s"/></form>
+<footer style="clear: both">
+    <div class="left_footer" style="text-align: right">
+        <font face="Arial Black" color="white" style="margin:5; font-size: 15" >&copy;COPYRIGHT</font>
     </div>
    
     <div class="right_footer">

@@ -31,6 +31,7 @@ footer div p{
 }
 
 .right_footer{
+	text-align:right;
 	width:30%;
 	//clear:left;
 	//float:right;

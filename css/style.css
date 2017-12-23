@@ -160,6 +160,7 @@ section{
     //border: 1px solid black;
     //overflow: hidden;
     text-align: center;
+	
 }
 
 .wrappers{
@@ -247,7 +248,7 @@ section{
 
 .right-bar{
     width: 50%;
-    height: 80%;
+    height: 100%;
 	margin-right:200;
 	margin-top:50;
     float: right;

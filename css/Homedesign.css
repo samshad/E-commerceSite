@@ -19,7 +19,7 @@
 					 color:6B6565;
 					 font-family:Courier;}
 
-	input[type='text'] { font-size: 24px; }
+	input[type='text'] { font-size: 20px; }
 /*------------------NAVIGATION-------------*/ 
 	ul{
         padding: 0;
@@ -79,7 +79,7 @@
 	
 	#User input[type="Submit"],input[type="Button"]{
 			background-color: 302F2F;
-			border: none;
+			
 			color: White;
 			text-align: center;
 			text-decoration: none;
@@ -88,10 +88,7 @@
 			cursor: pointer;
 	}
 	
-	#User textarea:focus, input:focus{
-		outline: 0;
-		border:0;
-	}
+	
 
 	
 	#User.dropdown{
@@ -177,9 +174,9 @@
 	}
 	
 	#regdiv input[type="text"],input[type="Password"]{
-		margin:5px;
-		font-size:20px;
-		width:400px;
+		//margin:5px;
+		//font-size:20px;
+		//width:400px;
 	}
 	
 	#regdiv input[type="Submit"],input[type="Button"]{

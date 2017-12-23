@@ -21,12 +21,20 @@
                 <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li> 
                 
                 <li><a href="viewProfile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
-                    <ul class="dropdowns">
-                        <li><a href="#"><font size=2> View Profile</font></a></li>
-                        <li><a href="#"><font size=2> Edit Profile</font></a></li>
-                        <li><a href="#"><font size=2> View History</font></a></li>
-                        <li><a href="#"><font size=2> Logout</font></a></li>     
-                    </ul>
+                   <ul class="dropdown" id="User" >
+							<form>
+                                <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
+                                <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
+                                <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
+                                <li style="text-align: center"><a href="forgot_password.html">Forgot Password?</a></li>
+                                <div style="text-align: center">
+                                    <button type="Submit" name="signin" formaction="home.html">Sign in</button>
+                                    <button type="Submit" name="signup" formaction="signup.html">Sign Up</button>	
+                                </div>
+                                	
+							</form>
+				    </ul>
+
                 
                 </li>    
                 <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i></a></li>
@@ -62,13 +70,13 @@
                         <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
                     </ul>
                 </li>    
-                <li><a href="index.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">KIDS</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">KIDS</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                     <ul class="dropdowns">
-                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
                         <hr>
-                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
                         <hr>
-                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
                     </ul>
                 </li>
                 <li><a href="custom.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">Custom</font></a></li>
@@ -93,13 +101,13 @@
     <ul>
         <li class="menu_font"><a href="index.html"><font color="black" face="Impact" style = "margin:15" size = "3">Sort</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdowns">
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">Price Ascending</font></a></li>
+                <li><a href="#"><font class="fnt" >Price Ascending</font></a></li>
                         
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">Price Descending</font></a></li>
+                <li><a href="#"><font class="fnt" >Price Descending</font></a></li>
                        
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">Best Sellers</font></a></li>
+                <li><a href="#"><font class="fnt" >Best Sellers</font></a></li>
                         
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">New Arrivals</font></a></li>
+                <li><a href="#"><font class="fnt" >New Arrivals</font></a></li>
                         
                 
             </ul>
@@ -107,27 +115,27 @@
         
         <li class="menu_font"><a href="index.html"><font color="black" face="Impact" style = "margin:15" size = "3">Price</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdowns">
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">< 1000</font></a></li>
+                <li><a href="#"><font class="fnt" >< 1000</font></a></li>
                        
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">1000-1500</font></a></li>
+                <li><a href="#"><font class="fnt" >1000-1500</font></a></li>
                         
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">1500-2000</font></a></li>
+                <li><a href="#"><font class="fnt" >1500-2000</font></a></li>
                        
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">2000-2500</font></a></li>
+                <li><a href="#"><font class="fnt" >2000-2500</font></a></li>
                        
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">> 2500</font></a></li>
+                <li><a href="#"><font class="fnt" >> 2500</font></a></li>
             </ul>
         </li>
         
         <li class="menu_font"><a href="index.html"><font color="black" face="Impact" style = "margin:15" size = "3">Size</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdowns">
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">XL</font></a></li>
+                <li><a href="#"><font class="fnt" >XL</font></a></li>
                         
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">Large</font></a></li>
+                <li><a href="#"><font class="fnt" >Large</font></a></li>
                         
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">Medium</font></a></li>
+                <li><a href="#"><font class="fnt" >Medium</font></a></li>
                         
-                <li><a href="#"><font color="black" face="Impact" style = "margin:15" size = "2">Small</font></a></li>
+                <li><a href="#"><font class="fnt" >Small</font></a></li>
                         
             </ul>
         </li>
@@ -148,74 +156,83 @@
                        <a href="item_details.html"><img src = "../Men Product/product2.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                         
                         <div class="dropdown-content">
-                              <div class="desc"><p>Price: 1100 BDT.</p></div>
+                             
                         </div>
+                        <p class="price"><u>Price: 1400 BDT.</u></p>
                     </div> 
 								
                     <div class="dropdown">
                          <a href="item_details.html"><img src = "../Men Product/product3.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                            <div class="desc"><p><b>Price: 1400 BDT.</b></p></div>
+                            
                          </div>
+                         <p class="price"><u>Price: 2000 BDT.</u></p>
                     </div> 
 
                     <div class="dropdown">
                          <a href="item_details.html"><img src = "../Men Product/product5.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                              <div class="desc"><p><b>Price: 1000 BDT.</b></p></div>
+                              
                          </div>
+                         <p class="price"><u>Price: 1500 BDT.</u></p>
                     </div>   
         
         	    </tr>
                 
-                <br>
+                <br><br><br>
                 <tr>
                 
     				<div class="dropdown">
                         <a href="item_details.html"><img src = "../Men Product/product6.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                             <div class="desc"><p><b>Price: 2500 BDT.</b></p></div>
+                             
                          </div>
+                         <p class="price"><u>Price: 4000 BDT.</u></p>
                      </div> 
                                 
 				     <div class="dropdown">
                          <a href="item_details.html"><img src = "../Men Product/product4.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                             <div class="desc"><p><b>Price: 1400 BDT.</b></p></div>
+                             
                          </div>
+                         <p class="price"><u>Price: 1500 BDT.</u></p>
                     </div>
                                  
                     <div class="dropdown">
                          <a href="item_details.html"><img src = "../Men Product/product8.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                            <div class="desc"><p><b>Price: 1400 BDT.</b></p></div>
+                            
                          </div>
+                         <p class="price"><u>Price: 2200 BDT.</u></p>
                     </div> 
 								
                 </tr>
                 
-                <br>
+                <br><br><br>
                 <tr align = "left">
                    
                     <div class="dropdown">
                         <a href="item_details.html"><img src = "../Men Product/product9.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                         <div class="dropdown-content">
-                              <div class="desc"><p>Price: 1100 BDT.</p></div>
+                              
                         </div>
+                        <p class="price"><u>Price: 1100 BDT.</u></p>
                     </div> 
 								
                     <div class="dropdown">
                          <a href="item_details.html"><img src = "../Men Product/product10.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                            <div class="desc"><p><b>Price: 1400 BDT.</b></p></div>
+                            
                          </div>
+                         <p class="price"><u>Price: 1050 BDT.</u></p>
                     </div> 
 
                     <div class="dropdown">
                          <a href="item_details.html"><img src = "../Men Product/product11.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
                          <div class="dropdown-content">
-                              <div class="desc"><p><b>Price: 2000 BDT.</b></p></div>
+                              
                          </div>
+                         <p class="price"><u>Price: 1000 BDT.</u></p>
                     </div>   
         
         	    </tr>
@@ -236,9 +253,9 @@
 
 <br>
 <hr class="hr_border"><br>
-<footer>
-    <div class="left_footer">
-         <form><font face="Arial Black" color="white" style="margin:5" >STAY CONNECTED</font><input type="Text" id="bEmail"placeholder="Enter Your Email"/><input type="Submit" value="s"/></form>
+<footer style="clear: both">
+    <div class="left_footer" style="text-align: right">
+        <font face="Arial Black" color="white" style="margin:5; font-size: 15" >&copy;COPYRIGHT</font>
     </div>
    
     <div class="right_footer">
