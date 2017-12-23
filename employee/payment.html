@@ -1,0 +1,145 @@
+
+<html>
+<head>
+     <title>E-CommerceSite</title>
+     <link rel="stylesheet" type="text/css" href="../css/Homedesign.css">
+     <link rel="stylesheet" type="text/css" href="../css/style.css">
+     <link rel="stylesheet" type="text/css" href="../css/test.css">
+     <link rel="stylesheet" type="text/css" href="../css/header.css">
+     <link rel="stylesheet" type="text/css" href="../css/menu.css">
+     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+     
+</head>
+
+<body>
+
+<header class="header">
+    <div>
+        <nav>
+            <ul class="header_ul" >
+                <li ><a href="home.html"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li> 
+                
+                <li><a href="viewProfile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
+                   <ul class="dropdown" id="User" >
+							<form>
+                                <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
+                                <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
+                                <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
+                                <li style="text-align: center"><a href="forgot_password.html">Forgot Password?</a></li>
+                                <div style="text-align: center">
+                                    <button type="Submit" name="signin" formaction="home.html">Sign in</button>
+                                    <button type="Submit" name="signup" formaction="signup.html">Sign Up</button>	
+                                </div>
+                                	
+							</form>
+				    </ul>
+
+                
+                </li>    
+                <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="login.html"><i class="fa fa-sign-out" aria-hidden="true" style="color: white"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<menu class="home">
+    <div>
+        <nav class="bar">
+            <ul>
+                <li class="menu_font"><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">WOMEN</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdowns">
+                        <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Saree</font></a></li>
+                        <hr>
+                        <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Skirt</font></a></li>
+                        <hr>
+                        <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
+                        <hr>
+                        <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
+                        <hr>
+                        <li><a href="WomenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
+                    </ul>
+                </li>
+                <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">MEN</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdowns">
+                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
+                        <hr>
+                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
+                        <hr>
+                        <li><a href="MenSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
+                    </ul>
+                </li>    
+                <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">KIDS</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdowns">
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Shirt</font></a></li>
+                        <hr>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">TShirt</font></a></li>
+                        <hr>
+                        <li><a href="KidSite.html"><font color="#444141" face="Impact" style = "margin:15" size = "2">Pant</font></a></li>
+                    </ul>
+                </li>
+                <li><a href="custom.html"><font color="#444141" face="Impact" style = "margin:15" size = "5">Custom</font></a></li>
+                <li>
+                   
+                </li>
+                <hr>
+                <div class="search-container">
+                    <form action="">
+                        <input  style="border-radius: 12px; "type="text" placeholder="Search.." name="search">
+                        <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>  
+            </ul>
+        </nav>
+    </div>
+</menu>
+
+<hr class="hr_border"><br>
+
+<section style="height: 300; position: relative; bottom: 100">
+    <div class="wrapper">
+        <div id="login-form">
+            <form action="home.html" method="POST">
+                <fieldset>
+                    <legend>Checkout</legend>
+                        <div id="cartTotal">
+                            <h1>Total Item:4</h1>
+                            <p>Price:2697.bdt</p>
+                        
+                        </div>
+                        <br><br>
+                        <div>
+                            <p>Payment Method</p>
+                            <select name="size" id="">
+                                <option name="payment" value="">Select</option>
+                                <option name="card" value="small">Card</option>
+                                <option name="size" value="medium">Cash</option>
+                            </select>
+                            <br><br>
+                            <input type="text" name="cardno" maxlength="30" placeholder="Card No."/>
+                        </div>
+                        <br><br>
+                    <hr>
+                    <button type="submit" name="submit" formaction="home.html">Confirm</button>
+                    
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer style="clear: both">
+    <div class="left_footer" style="text-align: right">
+        <font face="Arial Black" color="white" style="margin:5; font-size: 15" >&copy;COPYRIGHT</font>
+    </div>
+   
+    <div class="right_footer">
+        <img src = "../Icon/facebook.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/google.png" height="30px" width="30px" style="margin:15">
+        <img src = "../Icon/twitter.png" height="30px" width="30px" style="margin:15">
+    </div>      
+</footer>
+</body>
+</html>
