@@ -54,6 +54,15 @@ function emailcheck(elm){
     }
 }
 
+function checkall() {
+    var str = document.getElementById("emailerror").value;
+    alert(str);
+    if(str.length == "hoise"){
+        return true;
+    }
+    else return false;
+}
+
 function checkSubmit(email){
     //namecheck(document.forms[0].elements[0]);
     //namecheck(document.forms[0].elements[1]);
@@ -91,7 +100,7 @@ function showError(str){
     }
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if(this.readyState == 4 && this.status == 200){
             document.getElementById("emailerror").innerHTML = this.responseText;
         }
     };

@@ -11,6 +11,10 @@
     <script src="js/signupValid.js"></script>
 </head>
 
+<?php
+    require_once "model/db_connect.php";
+?>
+
 <header class="header">
     <div>
         <nav>

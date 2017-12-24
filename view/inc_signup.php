@@ -27,7 +27,7 @@
 					
 					<hr>
 					
-					<button type="submit" name="signup" onclick="return checkSubmit()">Sign Up</button>
+					<button type="submit" name="signup" onclick="return checkall()">Sign Up</button>
 					<button type="reset">Reset</button>
 				</fieldset>
 			</form>

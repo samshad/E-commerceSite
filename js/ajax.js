@@ -17,11 +17,10 @@ function signup(){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if(this.readyState == 4 && this.status == 200) {
-            document.getElementById("signup-form").innerHTML =
-                this.responseText;
+            document.getElementById("signup-form").innerHTML = this.responseText;
         }
     };
 
-    xhttp.open("GET", "controller/registration.php", true);
+    xhttp.open("GET", "controller/validation.php", true);
     xhttp.send();
 }
