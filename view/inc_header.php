@@ -23,10 +23,10 @@
                             <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
                             <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
                             <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
-                            <li style="text-align: center"><a href="forgot_password.html">Forgot Password?</a></li>
+                            <li style="text-align: center"><a href="forgetPassword.php">Forgot Password?</a></li>
                             <div style="text-align: center">
                                 <button type="Submit" name="signin" formaction="home.html">Sign in</button>
-                                <button type="Submit" name="signup" formaction="signup.html">Sign Up</button>
+                                <button type="Submit" name="signup" formaction="signup.php">Sign Up</button>
                             </div>
                         </form>
                     </ul>
