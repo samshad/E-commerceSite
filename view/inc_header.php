@@ -7,7 +7,8 @@
     <link rel="stylesheet" type="text/css" href="/E-commerceSite/css/menu.css">
     <link rel="stylesheet" type="text/css" href="/E-commerceSite/css/footer.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <script src="js/ajax.js"></script>
+    <script src="js/signupValid.js"></script>
 </head>
 
 <header class="header">
@@ -25,8 +26,10 @@
                             <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
                             <li style="text-align: center"><a href="forgetPassword.php">Forgot Password?</a></li>
                             <div style="text-align: center">
+                                <br>
                                 <button type="Submit" name="signin" formaction="home.html">Sign in</button>
-                                <button type="Submit" name="signup" formaction="signup.php">Sign Up</button>
+                                <br>
+                                <p>Haven't registered? <a href="signup.php">Sign Up</a></p>
                             </div>
                         </form>
                     </ul>
