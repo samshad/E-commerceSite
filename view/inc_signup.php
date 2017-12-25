@@ -1,7 +1,7 @@
 <section>
 	<div class="wrapper">
 		<div class="form">
-			<form>
+			<form action="controller/registration.php" method="POST">
 				<fieldset id="signup-form">
 					<legend>Registration</legend>
                     <span id="firstnameerror" class="error"></span>
@@ -27,7 +27,7 @@
 					
 					<hr>
                     <span id="registrationFailed" class="error"></span>
-					<button type="button" name="signup" onclick="checkSubmit()">Sign Up</button>
+					<button type="submit" name="signup">Sign Up</button>
 					<button type="reset">Reset</button>
 				</fieldset>
 			</form>

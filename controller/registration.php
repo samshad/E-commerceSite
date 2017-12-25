@@ -1,5 +1,5 @@
 <?php
-//require_once "session.php";
+require_once "session.php";
 require_once "validation.php";
 
 $email = ""; $fname = ""; $lname = ""; $uname = ""; $pass1 = ""; $pass2 = "";
