@@ -1,12 +1,17 @@
 <?php
-    $host="127.0.0.1";
+    /*$host="127.0.0.1";
     $user="root";
     $pass="";
     $dbname="ecommerce";
-    $port=3306;
+    $port=3306;*/
    
     function executeSQL($sql){
-        global $host, $user, $pass, $dbname, $port;
+        //global $host, $user, $pass, $dbname, $port;
+	    $host="127.0.0.1";
+	    $user="root";
+	    $pass="";
+	    $dbname="ecommerce";
+	    $port=3306;
         
         $link=mysqli_connect($host, $user, $pass, $dbname, $port);
         $result = mysqli_query($link, $sql);

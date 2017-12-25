@@ -1,5 +1,6 @@
 <?php
 require_once "session.php";
+require_once "../model/sqls.php";
 
 $uname = ""; $pass = "";
 
@@ -9,21 +10,16 @@ if(isset($_REQUEST['login_pass'])) $pass = htmlentities(trim($_REQUEST['login_pa
 $un = false; $p = false;
 
 if(!empty($uname) and !empty($pass)){
-	$user['uname'] = $uname;
-	$user['pass'] = $pass;
-	
-	echo $uname . " " . $pass . "<br>";
-	
-	/*if(authenticate($user)){
-	
+	$user = array( 'uname' => $uname, 'pass' => $pass );
+	//var_dump($user);
+	if(authenticate($user)){
+		$user = getCustomerByUsername($user['uname']);
+		$_SESSION['currUser'] = $user;
+		header("location: ../index.php");
 	}
 	else{
 		echo "Incorrect User Name or Password";
-	}*/
-}
-
-function authenticate($user){
-	return false;
+	}
 }
 
 /*if($fn == true and $ln == true and $em == true and $un == true and $p1 == true and $p2 == true){

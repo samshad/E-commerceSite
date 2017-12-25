@@ -27,7 +27,7 @@
 					
 					<hr>
                     <span id="registrationFailed" class="error"></span>
-					<button type="button" name="signup" onclick="return checkSubmit()">Sign Up</button>
+					<button type="button" name="signup" onclick="checkSubmit()">Sign Up</button>
 					<button type="reset">Reset</button>
 				</fieldset>
 			</form>

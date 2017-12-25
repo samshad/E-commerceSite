@@ -51,4 +51,19 @@ function addCustomer($customer){
     return false;
 }
 
+function getCustomerByUsername($customer){
+	$sql = "SELECT * FROM customer WHERE Username = '$customer'";
+	$result = executeSQL($sql);
+	
+	$customer=mysqli_fetch_assoc($result);
+	
+	return $customer;
+}
+
+function authenticate($user){
+	$ret = getCustomerByUsername($user['uname']);
+	if(is_null($ret)) return false;
+	return $ret['Password'] == $user['pass'];
+}
+
 ?>

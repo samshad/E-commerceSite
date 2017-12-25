@@ -12,6 +12,7 @@
 </head>
 
 <?php
+require_once "model/sqls.php";
 
 if(!isset($_SESSION['currUser'])){
 	echo '
@@ -42,7 +43,7 @@ else{
         <div>
             
             <div style="text-align: left; position: relative; top: 20">
-                <p style="color: white">Logged In As: </p>
+                <p style="color: white">Logged In As: ' . $_SESSION['currUser']['First_name'] . " " . $_SESSION['currUser']['Last_name'] . '</p>
             </div>
             
             <div style="text-align: right">
