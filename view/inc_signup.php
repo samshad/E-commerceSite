@@ -1,7 +1,7 @@
 <section>
 	<div class="wrapper">
 		<div class="form">
-			<form action="controller/registration.php" method="GET">
+			<form action="controller/registration.php" method="POST">
 				<fieldset id="signup-form">
 					<legend>Registration</legend>
                     <span id="firstnameerror" class="error"></span>

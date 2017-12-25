@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="js/ajax.js"></script>
     <script src="js/signupValid.js"></script>
+    <script src="js/loginValid.js"></script>
 </head>
 
 <?php
@@ -23,14 +24,15 @@ if(!isset($_SESSION['currUser'])){
     
                     <li><a href="viewProfile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
                         <ul class="dropdown" id="User" >
-                            <form>
+                            <form action="controller/registration.php" method="POST">
                                 <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
-                                <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
-                                <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
+                                <li><input type="text" id="login_uname" name="login_uname" placeholder="USERNAME" style="width: 80%"></li>
+                                <li><input type="Password" id="login_pass" name="login_pass" placeholder="PASSWORD" style="width: 80%;"></li>
+                                <span id="login_error" class="error"></span>
                                 <li style="text-align: center"><a href="forgetPassword.php">Forgot Password?</a></li>
                                 <div style="text-align: center">
                                     <br>
-                                    <button type="Submit" name="signin" formaction="home.html">Sign in</button>
+                                    <button type="Submit" name="signin" onclick="return login()"">Sign in</button>
                                     <br>
                                     <p><a href="signup.php">Sign Up</a></p>
                                 </div>
