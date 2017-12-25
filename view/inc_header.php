@@ -1,3 +1,7 @@
+<?php
+    require_once "controller/session.php";
+?>
+
 <head>
     <title>E-CommerceSite</title>
     <link rel="stylesheet" type="text/css" href="/E-commerceSite/css/Homedesign.css">
