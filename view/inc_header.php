@@ -12,7 +12,8 @@
 </head>
 
 <?php
-    require_once "model/db_connect.php";
+    //require_once "model/db_connect.php";
+    //require_once "controller/session.php";
 ?>
 
 <header class="header">
