@@ -209,13 +209,13 @@ function checkSubmit(){
         var url = "controller/registration.php";
         var par = "fname=" + fname + "&lname=" + lname + "&email=" + email + "&uname=" + uname + "&pass1=" + pass1 + "&pass2=" + pass2;
 
-        xmlhttp.open("POST", url, true);
+        xhttp.open("POST", url, true);
 
-        xmlhttp.setRequestHeader("content-type","application/x-www-form-urlencoded");
-        xmlhttp.setRequestHeader("content-length",par.length);
-        xmlhttp.setRequestHeader("connection","close");
+        xhttp.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhttp.setRequestHeader("content-length",par.length);
+        xhttp.setRequestHeader("connection","close");
 
-        xmlhttp.send(par);
+        xhttp.send(par);
     }
     else{
         alert("Required All Fields !");
