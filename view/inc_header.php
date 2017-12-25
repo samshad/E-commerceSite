@@ -12,36 +12,35 @@
 </head>
 
 <?php
-    //require_once "model/db_connect.php";
-    //require_once "controller/session.php";
+
+if(!isset($_SESSION['currUser'])){
+    echo '<header class="header">
+        <div>
+            <nav>
+                <ul class="header_ul" >
+                    <li ><a href="index.php"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
+                    <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li>
+    
+                    <li><a href="viewProfile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
+                        <ul class="dropdown" id="User" >
+                            <form>
+                                <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
+                                <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
+                                <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
+                                <li style="text-align: center"><a href="forgetPassword.php">Forgot Password?</a></li>
+                                <div style="text-align: center">
+                                    <br>
+                                    <button type="Submit" name="signin" formaction="home.html">Sign in</button>
+                                    <br>
+                                    <p><a href="signup.php">Sign Up</a></p>
+                                </div>
+                            </form>
+                        </ul>
+                    </li>
+                    <li><a href="contactus.php"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>';
+}
 ?>
-
-<header class="header">
-    <div>
-        <nav>
-            <ul class="header_ul" >
-                <li ><a href="index.php"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
-                <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li>
-
-                <li><a href="viewProfile.html"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
-                    <ul class="dropdown" id="User" >
-                        <form>
-                            <li style="text-align: center"><text id="Navfront"><font color="#444141">Login</font></text><hr></li>
-                            <li><input type="text" placeholder="USERNAME" style="width: 80%"></li>
-                            <li><input type="Password" placeholder="PASSWORD" style="width: 80%;"></li>
-                            <li style="text-align: center"><a href="forgetPassword.php">Forgot Password?</a></li>
-                            <div style="text-align: center">
-                                <br>
-                                <button type="Submit" name="signin" formaction="home.html">Sign in</button>
-                                <br>
-                                <p>Haven't registered? <a href="signup.php">Sign Up</a></p>
-                            </div>
-                        </form>
-                    </ul>
-                </li>
-                <li><a href="contactus.php"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i></a></li>
-                <li><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true" style="color: white"></i></a></li>
-            </ul>
-        </nav>
-    </div>
-</header>

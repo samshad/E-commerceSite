@@ -23,40 +23,32 @@ function isUniqueUserName($name){
 	else return true;
 }
 
-/*function addusers($users){
-	$sql = "INSERT INTO users(Username, Password, Type, Status) VALUES('$users[username]', '$users[pass]', '$users[type]', 'valid')";
-	
-	$result = executeSQL($sql);
-	
-	if($result!=true)
-	{
-	else echo "<script>
-                    alert('Failed From users');
-                    
-                 </script>";
-	}
-	
-	return $result;
+function addUsers($users){
+    $sql = "INSERT INTO users(Username, Password, Type, Status) VALUES('$users[uname]', '$users[pass]', '$users[type]', 'valid')";
+    
+    $result = executeSQL($sql);
+    
+    if($result == true){
+        return true;
+    }
+    
+    return false;
 }
 
-function addcustomer($customer){
-	//$date = STR_TO_DATE('$customer[date]', '%d/%m/%Y');
-	$sql = "INSERT INTO customer(First_name, Last_name, Email, Username, Password, Status) VALUES('$customer[fname]', '$customer[lname]', '$customer[email]', '$customer[username]', '$customer[pass]', 'valid'";
-	
-	
-	$result = executeSQL($sql);
-	
-	if($result==true)
-	{
-		addusers($customer);
-	}
-	
-	else echo "<script>
-                    alert('Failed From Customer');
-                    
-                 </script>";
-	
-	return $result;
-}*/
+function addCustomer($customer){
+    $sql = "INSERT INTO customer(First_name, Last_name, Email, Username, Password, Status, DOJ) VALUES('$customer[fname]', '$customer[lname]', '$customer[email]', '$customer[uname]', '$customer[pass]', 'valid', '$customer[doj]')";
+    
+    $result = executeSQL($sql);
+    
+    $customer['type'] = "customer";
+    
+    if($result == true){
+        if(addUsers($customer)){
+			return true;
+	    }
+    }
+    
+    return false;
+}
 
 ?>

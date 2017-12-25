@@ -76,9 +76,20 @@ if(!empty($pass2)){
 }
 
 if($fn == true and $ln == true and $em == true and $un == true and $p1 == true and $p2 == true){
-	//
-	echo '<script> alert("Registration Successful");
+	$customer['fname'] = $fname;
+	$customer['lname'] = $lname;
+	$customer['email'] = $email;
+	$customer['uname'] = $uname;
+	$customer['pass'] = $pass1;
+	$customer['doj'] = date("d.m.Y");
+	
+	if(addCustomer($customer)){
+		echo '<script> alert("Registration Successful");
 					location.replace("../index.php"); </script>';
+	}
+	else{
+		echo '<script> alert("Registration Failed! Try Again!"); </script>';
+	}
 }
 
 ?>
