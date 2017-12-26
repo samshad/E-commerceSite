@@ -232,8 +232,6 @@ function checkSubmit(){
         xhttp.send(par);*/
         return true;
     }
-    else{
-        alert("Required All Fields !");
-        return false;
-    }
+    alert("Required All Fields !");
+    return false;
 }

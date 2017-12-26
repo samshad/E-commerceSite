@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="js/signupValid.js"></script>
     <script src="js/loginValid.js"></script>
+    <script src="js/editProfile.js"></script>
 </head>
 
 <?php
@@ -47,7 +48,7 @@ else{
         <div>
             
             <div style="text-align: left; position: relative; top: 20">
-                <p style="color: white">Logged In As: ' . $_SESSION['currUser']['First_name'] . " " . $_SESSION['currUser']['Last_name'] . '</p>
+                <p style="color: white">Logged In As: <a style="text-decoration: none; color: white" href="viewProfile.php">' . $_SESSION['currUser']['First_name'] . " " . $_SESSION['currUser']['Last_name'] . '</a></p>
             </div>
             
             <div style="text-align: right">

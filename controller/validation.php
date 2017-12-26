@@ -41,4 +41,41 @@ function isValidUserName($name){
         return false;
     }
 }
+
+function isValidMobile($m){
+	str_replace(" ", "", $m);
+	str_replace("-", "", $m);
+	if(preg_match('/^(0088|\+88)?(01)[156789]{1}[0-9]{8}$/', $m)){
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+function isValidDOB($dob){
+	if(preg_match('/^\s*(3[01]|[12][0-9]|0?[1-9])\.(1[012]|0?[1-9])\.((?:19|20)\d{2})\s*$/', $dob)){
+		$month = array(0,31,28,31,30,31,30,31,31,30,31,30,31);
+		
+		$ans = explode(".",$dob);
+		
+		$d = (int)$ans[0];
+		$m = (int)$ans[1];
+		$y = (int)$ans[2];
+		
+		if($m == 2 and $d == 29){
+			if((($y % 4 == 0) && ($y % 100 != 0)) || $y % 400 == 0) return true;
+			return false;
+		}
+		
+		if($d <= $month[$m]){
+			return true;
+		}
+		
+		return false;
+	}
+	else{
+		return false;
+	}
+}
 ?>

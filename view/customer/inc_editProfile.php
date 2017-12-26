@@ -1,22 +1,24 @@
 <div class="right-bar">
 	<div class="form">
-		<form action="#" method="POST">
+		<form action="controller/editProfileHandler.php" method="POST">
 			<fieldset class="editField">
 				<legend>Edit Profile</legend>
 				<label>Name:</label>
-				<input type="text" name="firstname" placeholder="First Name" maxlength="30"/>
-				<input type="text" name="lastname" placeholder="Last Name" maxlength="30"/>
+                <span id="firstnameerror" class="error"></span>
+				<input onkeyup="checkFirstName(this.value)" type="text" name="fname" placeholder="First Name" value="<?php echo $_SESSION['currUser']['First_name']; ?>" maxlength="30"/>
+                <span id="lastnameerror" class="error"></span>
+                <input onkeyup="checkLastName(this.value)" type="text" name="lname" placeholder="Last Name" value="<?php echo $_SESSION['currUser']['Last_name']; ?>" maxlength="30"/>
 				
 				<hr>
-				
-				<label>E-mail Address:</label>
-				<input type="text" name="email" maxlength="50"/>
-				
+                
+                <label>E-mail Address:</label>
+				<input onkeyup="checkEmail(this.value)" type="text" name="email" value="<?php echo $_SESSION['currUser']['Email']; ?>" maxlength="50"/>
+                <span id="emailerror" class="error"></span>
 				<hr>
 				
 				<label>Mobile:</label>
-				<input type="text" name="mobile" value="+88" maxlength="15"/>
-				
+				<input onkeyup="checkMobile(this.value)" type="text" name="mobile" value="<?php echo $_SESSION['currUser']['Phone']; ?>" maxlength="15"/>
+                <span id="mobileerror" class="error"></span>
 				<hr>
 				
 				<label>Address:</label>
@@ -26,18 +28,21 @@
 				
 				<label>Gender:</label>
 				<select name = "gender">
-					<option value="Male">Male</option>
-					<option value="Female">Female</option>
-					<option value="Other">Other</option>
+					<option value="Male" <?php if($_SESSION['currUser']['Gender'] == 'Male') echo"selected"; ?> >Male</option>
+					<option value="Female" <?php if($_SESSION['currUser']['Gender'] == 'Female') echo"selected"; ?> >Female</option>
+					<option value="Other" <?php if($_SESSION['currUser']['Gender'] == 'Other') echo"selected"; ?> >Other</option>
 				</select>
 				
 				<hr>
 				
 				<label>Date of Birth:</label>
-				
+                <input onkeyup="checkDob(this.value)" type="text" name="dob" value="<?php echo $_SESSION['currUser']['DOB']; ?>" maxlength="15"/>
+                <span id="doberror" class="error"></span>
+                <br>
+                <span id="editprofileerror" class="error"><?php if(isset($_REQUEST['er'])) echo $_REQUEST['er']; ?></span>
 				<hr>
 				
-				<button type="submit" name="submit">Update</button>
+				<button type="submit" name="submit" onclick="return checkEditProfile()">Update</button>
 			</fieldset>
 		</form>
 	</div>
