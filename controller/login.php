@@ -19,4 +19,10 @@ if(!empty($uname) and !empty($pass)){
 	}
 }
 
+function authenticate($user){
+	$ret = getCustomerByUsername($user['uname']);
+	if(is_null($ret)) return false;
+	return $ret['Password'] == $user['pass'];
+}
+
 ?>
