@@ -13,7 +13,7 @@
                     
 					<a href="forgetPassword.php">Forgot Password?</a><br><br>
 					
-					<button type="submit" name="signin">Sign in</button>
+					<button type="submit" name="signin" onclick="return login()">Sign in</button>
 
                     <a href="signup.php">Sign Up</a>
 				</div>

@@ -187,8 +187,22 @@ function checkPass2(str){
 }
 
 function checkSubmit(){
+    var fname = document.getElementById("firstname").value;
+    var lname = document.getElementById("lastname").value;
+    var email = document.getElementById("email").value;
+    var uname = document.getElementById("username").value;
+    var pass1 = document.getElementById("password1").value;
+    var pass2 = document.getElementById("password2").value;
+
+    checkFirstName(fname);
+    checkLastName(lname);
+    checkEmail(email);
+    checkUserName(uname);
+    checkPass1(pass1);
+    checkPass2(pass2);
+
     if(fn == true && ln == true && em == true && un == true && p1 == true && p2 == true) {
-        var fname = document.getElementById("firstname").value;
+        /*var fname = document.getElementById("firstname").value;
         var lname = document.getElementById("lastname").value;
         var email = document.getElementById("email").value;
         var uname = document.getElementById("username").value;
@@ -204,7 +218,7 @@ function checkSubmit(){
         };
         /*var values = "fname=" + fname + "&lname=" + lname + "&email=" + email + "&uname=" + uname + "&pass1=" + pass1 + "&pass2=" + pass2;
         xhttp.open("GET", "controller/registration.php?" + values, true);
-        xhttp.send();*/
+        xhttp.send();
 
         var url = "controller/registration.php";
         var par = "fname=" + fname + "&lname=" + lname + "&email=" + email + "&uname=" + uname + "&pass1=" + pass1 + "&pass2=" + pass2;
@@ -215,7 +229,8 @@ function checkSubmit(){
         xhttp.setRequestHeader("content-length",par.length);
         xhttp.setRequestHeader("connection","close");
 
-        xhttp.send(par);
+        xhttp.send(par);*/
+        return true;
     }
     else{
         alert("Required All Fields !");

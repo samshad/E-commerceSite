@@ -20,7 +20,7 @@ function login(){
     loginPass(pass);
 
     if(un == true && p == true){
-        if(uname.length == 0){
+        /*if(uname.length == 0){
             document.getElementById("login_error").innerHTML = "";
             alert("Required All Fields !");
             un = false;
@@ -44,7 +44,7 @@ function login(){
 
         /*var values = "login_uname=" + uname + "&login_pass=" + pass;
         xhttp.open("GET", "controller/login.php?" + values, true);
-        xhttp.send();*/
+        xhttp.send();
 
         var url = "controller/login.php";
         var par = "login_uname=" + uname + "&login_pass=" + pass;
@@ -57,7 +57,8 @@ function login(){
         xhttp.setRequestHeader("content-length",par.length);
         xhttp.setRequestHeader("connection","close");
 
-        xhttp.send(par);
+        xhttp.send(par);*/
+        return true;
     }
     else{
         alert("Required All Fields !");

@@ -19,7 +19,8 @@ if(!empty($fname)){
 	}
 	else{
 		$fn = false;
-		echo "Invalid First Name";
+		header("location: ../signup.php?er=Invalid First Name");
+		//echo "Invalid First Name";
 	}
 }
 
@@ -29,7 +30,8 @@ if(!empty($lname)){
 	}
 	else{
 		$ln = false;
-		echo "Invalid Last Name";
+		header("location: ../signup.php?er=Invalid Last Name");
+		//echo "Invalid Last Name";
 	}
 }
 
@@ -40,7 +42,8 @@ if(!empty($email)){
 	}
 	else{
 		$em = false;
-		echo "Invalid Email Address or Already Registered";
+		header("location: ../signup.php?er=Invalid Email Address or Already Registered");
+		//echo "Invalid Email Address or Already Registered";
 	}
 }
 
@@ -50,7 +53,8 @@ if(!empty($uname)){
 	}
 	else{
 		$un = false;
-		echo "Invalid User name or Its Taken";
+		header("location: ../signup.php?er=Invalid User name or Its Taken");
+		//echo "Invalid User name or Its Taken";
 	}
 }
 
@@ -60,14 +64,16 @@ if(!empty($pass1)){
 	}
 	else{
 		$p1 = false;
-		echo "Password should be at least 6 characters long and contain at least 1 special character";
+		header("location: ../signup.php?er=Password should be at least 6 characters long and contain at least 1 special character");
+		//echo "Password should be at least 6 characters long and contain at least 1 special character";
 	}
 }
 
 if(!empty($pass2)){
 	if($pass1 != $pass2){
 		$p2 = false;
-		echo "Passwords didn't matched";
+		header("location: ../signup.php?er=Passwords didn't matched");
+		//echo "Passwords didn't matched";
 	}
 	
 	else{
@@ -75,7 +81,7 @@ if(!empty($pass2)){
 	}
 }
 
-/*if($fn == true and $ln == true and $em == true and $un == true and $p1 == true and $p2 == true){
+if($fn == true and $ln == true and $em == true and $un == true and $p1 == true and $p2 == true){
 	$customer['fname'] = $fname;
 	$customer['lname'] = $lname;
 	$customer['email'] = $email;
@@ -88,8 +94,8 @@ if(!empty($pass2)){
 					location.replace("../index.php"); </script>';
 	}
 	else{
-		echo '<script> alert("Registration Failed! Try Again!"); </script>';
+		header("location: ../signup.php?er=Required all fields");
 	}
-}*/
+}
 
 ?>

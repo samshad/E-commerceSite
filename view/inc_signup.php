@@ -1,7 +1,7 @@
 <section>
 	<div class="wrapper">
 		<div class="form">
-			<form action="controller/registration.php" method="POST">
+			<form action="controller/serverSignup.php" method="POST">
 				<fieldset id="signup-form">
 					<legend>Registration</legend>
                     <span id="firstnameerror" class="error"></span>
@@ -26,8 +26,8 @@
 					<input type="Password" name="pass2" id="password2" onkeyup="checkPass2(this.value)" maxlength="50" placeholder="Confirm Password"/>
 					
 					<hr>
-                    <span id="registrationFailed" class="error"></span>
-					<button type="submit" name="signup">Sign Up</button>
+                    <span id="registrationFailed" class="error"><?php if(isset($_REQUEST['er'])) echo $_REQUEST['er']; ?></span>
+					<button type="submit" name="signup" onclick="return checkSubmit()">Sign Up</button>
 					<button type="reset">Reset</button>
 				</fieldset>
 			</form>
