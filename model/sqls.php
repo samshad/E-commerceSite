@@ -60,5 +60,53 @@ function getCustomerByUsername($customer){
 	return $customer;
 }
 
+function editUserDOB($customer){
+	$sql = "UPDATE customer SET DOB='$customer[dob]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
+function editUserMobile($customer){
+	$sql = "UPDATE customer SET Phone='$customer[mobile]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
+function editUserGender($customer){
+	$sql = "UPDATE customer SET Gender='$customer[gender]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
+function editUserEmail($customer){
+	$sql = "UPDATE customer SET Email='$customer[email]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
+function editUserFname($customer){
+	$sql = "UPDATE customer SET First_name='$customer[fname]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
+function editUserLname($customer){
+	$sql = "UPDATE customer SET Last_name='$customer[lname]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
 
 ?>

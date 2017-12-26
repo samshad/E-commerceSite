@@ -1,18 +1,18 @@
 <div class="right-bar">
 	<div class="form">
-		<form action="controller/editProfileHandler.php" method="POST">
+		<form action="controller/editProfileHandler.php" method="GET">
 			<fieldset class="editField">
-				<legend>Edit Profile</legend>
-				<label>Name:</label>
+                <legend>Edit Profile</legend>
                 <span id="firstnameerror" class="error"></span>
-				<input onkeyup="checkFirstName(this.value)" type="text" name="fname" placeholder="First Name" value="<?php echo $_SESSION['currUser']['First_name']; ?>" maxlength="30"/>
+                <label>Name:</label>
+                <input onkeyup="echeckFirstName(this.value)" type="text" name="fname" placeholder="First Name" value="<?php echo $_SESSION['currUser']['First_name']; ?>" maxlength="30"/>
                 <span id="lastnameerror" class="error"></span>
-                <input onkeyup="checkLastName(this.value)" type="text" name="lname" placeholder="Last Name" value="<?php echo $_SESSION['currUser']['Last_name']; ?>" maxlength="30"/>
+                <input onkeyup="echeckLastName(this.value)" type="text" name="lname" placeholder="Last Name" value="<?php echo $_SESSION['currUser']['Last_name']; ?>" maxlength="30"/>
 				
 				<hr>
                 
                 <label>E-mail Address:</label>
-				<input onkeyup="checkEmail(this.value)" type="text" name="email" value="<?php echo $_SESSION['currUser']['Email']; ?>" maxlength="50"/>
+				<input onkeyup="echeckEmail(this.value)" type="text" name="email" value="<?php echo $_SESSION['currUser']['Email']; ?>" maxlength="50"/>
                 <span id="emailerror" class="error"></span>
 				<hr>
 				

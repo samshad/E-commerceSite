@@ -1,4 +1,4 @@
-em = false, fn = false, ln = false, m = false, d = false;
+var em = false, fn = false, ln = false, m = false, d = false;
 
 function isValidEmail(email){
     if(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/.test(email)){
@@ -18,7 +18,7 @@ function isValidName(name){
     }
 }
 
-function checkEmail(str){
+function echeckEmail(str){
     var xhttp;
     if(str.length == 0){
         document.getElementById("emailerror").innerHTML = "";
@@ -39,7 +39,7 @@ function checkEmail(str){
     xhttp.send();
 }
 
-function checkFirstName(str){
+function echeckFirstName(str){
     var xhttp;
     if(str.length == 0){
         document.getElementById("firstnameerror").innerHTML = "";
@@ -60,7 +60,7 @@ function checkFirstName(str){
     xhttp.send();
 }
 
-function checkLastName(str){
+function echeckLastName(str){
     var xhttp;
     if(str.length == 0){
         document.getElementById("lastnameerror").innerHTML = "";
@@ -116,8 +116,25 @@ function checkDob(str){
 }
 
 function checkEditProfile(){
+    //var em = false, fn = false, ln = false, m = false, d = false;
+    var fname = document.getElementById("firstname").value;
+    var lname = document.getElementById("lastname").value;
+    var email = document.getElementById("email").value;
+    var mobile = document.getElementById("mobile").value;
+    var gender = document.getElementById("gender").value;
+    var dob = document.getElementById("dob").value;
+
+    echeckFirstName(fname);
+    echeckLastName(lname);
+    echeckEmail(email);
+    checkMobile(mobile);
+    checkDob(dob);
+
+    alert("adf All Fields !");
+
     if(em == true && m == true && d == true && ln == true && fn == true){
         return true;
     }
+    alert("Required All Fields !");
     return false;
 }
