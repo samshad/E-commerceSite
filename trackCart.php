@@ -6,9 +6,9 @@ echo '
 <section>
 	<div class="wrapper">
 		<div id="profile">';
-		
+
 require_once "view/customer/inc_leftbar.php";
-require_once "view/customer/inc_viewProfile.php";
+require_once "view/customer/inc_trackCart.php";
 
 
 echo '</div>
@@ -18,3 +18,4 @@ echo '</div>
 
 include_once "view/inc_footer.php";
 ?>
+

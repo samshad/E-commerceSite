@@ -2,7 +2,7 @@
 	
 	<div>
 		<img src="../raw/defaultPic.png" alt="Profile Picture" height="100" width="100"> <br>
-		<a href="changeProfilePic.html">Change Profile Picture</a>
+		<a href="changeProfilePic.php">Change Profile Picture</a>
 	</div>
 	<hr>
 	<div style="float: left">
@@ -52,6 +52,6 @@
 	</div>
 	<hr>
 	
-	<a href="editProfile.html">Edit Profile</a>
+	<a href="editProfile.php">Edit Profile</a>
 
 </div>

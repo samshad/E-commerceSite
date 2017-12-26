@@ -6,9 +6,9 @@ echo '
 <section>
 	<div class="wrapper">
 		<div id="profile">';
-		
+
 require_once "view/customer/inc_leftbar.php";
-require_once "view/customer/inc_viewProfile.php";
+require_once "view/customer/inc_changePassword.php";
 
 
 echo '</div>
