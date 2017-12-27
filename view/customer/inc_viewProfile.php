@@ -43,12 +43,11 @@
 		<label id="email"> <?php echo $_SESSION['currUser']['Email']; ?></label>
 		<hr>
 		
-		<label id="mobile"> <?php echo ""; ?></label>
+		<label id="mobile"> <?php echo $_SESSION['currUser']['Phone']; ?></label>
 		<hr>
 		
 		<label id="address"> banasree</label>
-	
-	
+  
 	</div>
 	<hr>
 	

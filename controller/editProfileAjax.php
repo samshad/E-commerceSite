@@ -25,7 +25,7 @@ if(!empty($lname)){
 }
 
 if(!empty($email)){
-	if(!isValidEmail($email)){
+	if(!isValidEmail($email) and $email != $_SESSION['currUser']['Email']){
 		echo "Invalid Email Address or Already Registered";
 	}
 }

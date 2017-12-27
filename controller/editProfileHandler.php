@@ -36,7 +36,7 @@ if(!empty($lname)){
 }
 
 if(!empty($email)){
-	if(isValidEmail($email)){
+	if(isValidEmail($email) or $email == $_SESSION['currUser']['Email']){
 		$em = true;
 		//echo "";
 	}
@@ -69,37 +69,50 @@ if(!empty($dob)){
 	}
 }
 
-if(!empty($dob)){
-	if(isValidDOB($dob)){
-		$d = true;
+if(!empty($fname) and !empty($lname) and !empty($email) and !empty($mobile) and !empty($gender) and !empty($dob)){
+	if(updateDOB($dob) and updateEmail($email) and updateFname($fname) and updateGender($gender) and updateLname($lname) and updateMobile($mobile)){
+		$_SESSION['currUser'] = getCustomerByUsername($_SESSION['currUser']['Username']);
+		echo '<script> alert("Update Successful");
+					location.replace("../viewProfile.php"); </script>';
 	}
-	
 	else{
-		header("location: ../editProfile.php?er=Insert valid birth date");
-		//echo "Passwords didn't matched";
+		echo '<script> alert("Somethings wrong"); </script>';
 	}
+}
+
+else{
+	//echo "All Fields Required";
+	header("location: ../editProfile.php?er=All Fields Required");
 }
 
 function updateDOB($dob){
 	$user = array( 'username' => $_SESSION['currUser']['Username'], 'dob' => $dob );
-	
+	return editUserDOB($user);
 }
 
-if($fn == true and $ln == true and $em == true and $un == true and $p1 == true and $p2 == true){
-	$customer['fname'] = $fname;
-	$customer['lname'] = $lname;
-	$customer['email'] = $email;
-	$customer['uname'] = $uname;
-	$customer['pass'] = $pass1;
-	$customer['doj'] = date("d.m.Y");
-	
-	if(addCustomer($customer)){
-		echo '<script> alert("Registration Successful");
-					location.replace("../index.php"); </script>';
-	}
-	else{
-		header("location: ../signup.php?er=Required all fields");
-	}
+function updateMobile($mob){
+	$user = array( 'username' => $_SESSION['currUser']['Username'], 'mobile' => $mob );
+	return editUserMobile($user);
+}
+
+function updateEmail($email){
+	$user = array( 'username' => $_SESSION['currUser']['Username'], 'email' => $email );
+	return editUserEmail($user);
+}
+
+function updateFname($fname){
+	$user = array( 'username' => $_SESSION['currUser']['Username'], 'fname' => $fname );
+	return editUserFname($user);
+}
+
+function updateLname($lname){
+	$user = array( 'username' => $_SESSION['currUser']['Username'], 'lname' => $lname );
+	return editUserLname($user);
+}
+
+function updateGender($gender){
+	$user = array( 'username' => $_SESSION['currUser']['Username'], 'gender' => $gender );
+	return editUserGender($user);
 }
 
 ?>
