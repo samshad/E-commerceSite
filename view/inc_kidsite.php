@@ -1,147 +1,147 @@
-<?php
-echo '
-	<div class="pages">
+<hr class="hr_border">
+
+<?php 
+    
+    $cnt=0;
+
+    $GLOBALS['cnt'];
+
+    if(!empty($_REQUEST['sz']))
+    {
+        $filter['size']=$_REQUEST['sz'];  
+        $GLOBALS['cnt']=1;
+    }
+
+    if(!empty($_REQUEST['sort']))
+    {
+        $filter['srt']=$_REQUEST['sort']; 
+        $GLOBALS['cnt']=2;
+    }  
+
+    if(!empty($_REQUEST['price']))
+    {
+        $filter['price']=$_REQUEST['price']; 
+        $GLOBALS['cnt']=3;
+    }  
+    
+    if(!empty($_REQUEST['cate']))
+    {
+        $_REQUEST['category']=$_REQUEST['cate']; 
+        $GLOBALS['cnt']=4;
+    }
+    
+    
+    $filter['type'] ='kids';
+    $filter['category'] =$_REQUEST['category'];
+    $GLOBALS['category']=$_REQUEST['category'];
+
+?>
+
+<div class="pages">
     <ul>
-        <li class="menu_font"><a href="index.html"><font color="black" face="Impact" style = "margin:15" size = "3">Sort</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <li class="menu_font"><a href="KidSite.php?cate=all"><font color="black" face="Impact" style = "margin:15" size = "3">Sort</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdowns">
-                <li><a href="#"><font class="fnt" >Price Ascending</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >Price Descending</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >Best Sellers</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >New Arrivals</font></a></li>
-                
+               <?php
+                echo '<li><a href="KidSite.php?sort=asc&category='.$GLOBALS['category'].'"><font class="fnt" >Price Ascending</font></a></li>';
+                        
+                echo '<li><a href="KidSite.php?sort=dsc&category='.$GLOBALS['category'].'"><font class="fnt" >Price Descending</font></a></li>';
+                       
+                echo '<li><a href="KidSite.php?sort=sold&category='.$GLOBALS['category'].'"><font class="fnt" >Best Sellers</font></a></li>';
+                        
+                echo '<li><a href="KidSite.php?sort=arrival&category='.$GLOBALS['category'].'"><font class="fnt" >New Arrivals</font></a></li>';
+                ?>       
                 
             </ul>
         </li>
         
-        <li class="menu_font"><a href="index.html"><font color="black" face="Impact" style = "margin:15" size = "3">Price</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <li class="menu_font"><a href="KidSite.php?cate=all"><font color="black" face="Impact" style = "margin:15" size = "3">Price</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdowns">
-                <li><a href="#"><font class="fnt" >< 1000</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >1000-1500</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >1500-2000</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >2000-2500</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >> 2500</font></a></li>
+               <?php 
+                echo '<li><a href="KidSite.php?price=1000&category='.$GLOBALS['category'].'"><font class="fnt" >< 1000</font></a></li>';
+                       
+                echo '<li><a href="KidSite.php?price=1500&category='.$GLOBALS['category'].'"><font class="fnt" >1000-1500</font></a></li>';
+                        
+                echo '<li><a href="KidSite.php?price=2000&category='.$GLOBALS['category'].'"><font class="fnt" >1500-2000</font></a></li>';
+                       
+                echo '<li><a href="KidSite.php?price=2500&category='.$GLOBALS['category'].'"><font class="fnt" >2000-2500</font></a></li>';
+                       
+                echo '<li><a href="KidSite.php?price=2500&category='.$GLOBALS['category'].'"><font class="fnt" >> 2500</font></a></li>';
+               ?>
             </ul>
         </li>
         
-        <li class="menu_font"><a href="index.html"><font color="black" face="Impact" style = "margin:15" size = "3">Size</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        <li class="menu_font" id="size"><a href="KidSite.php?cate=all"><font color="black" face="Impact" style = "margin:15" size = "3">Size</font> <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdowns">
-                <li><a href="#"><font class="fnt" >XL</font></a></li>
+               <?php 
                 
-                <li><a href="#"><font class="fnt" >Large</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >Medium</font></a></li>
-                
-                <li><a href="#"><font class="fnt" >Small</font></a></li>
-                
+                echo '<li value="xl"><a href="KidSite.php?sz=xl&category='.$GLOBALS['category'].'"><font class="fnt">XL</font></a></li>';
+                        
+                echo '<li value="l"><a href="KidSite.php?sz=l&category='.$GLOBALS['category'].'"><font class="fnt">LARGE</font></a></li>';
+                        
+                echo '<li value="m"><a href="KidSite.php?sz=m&category='.$GLOBALS['category'].'"><font class="fnt">MEDIUM</font></a></li>';
+                        
+                echo '<li value="s"><a href="KidSite.php?sz=s&category='.$GLOBALS['category'].'"><font class="fnt">SMALL</font></a></li>';
+                 ?>       
             </ul>
         </li>
-    </ul>
+    </ul>  
+          
 </div>
+
 
 <hr class="hr_border"><br>
 
-<section>
+
+
+<section> 
     <div class="wrapper">
       
        <div align="center">
             <table>
             
-				<tr align = "left">
+            <?php 
+                 
+                if($GLOBALS['cnt']==2)
+                {
+                    $products=getall_productsBySort($filter);
+                } 
+                
+                if($GLOBALS['cnt']==1)
+                {
+                    $products=getall_productsBySize($filter);
+                    //var_dump($products);
+                }        
+                
+                if($GLOBALS['cnt']==3)
+                    $products=getall_productsBySprice($filter);
+                
+                if($GLOBALS['cnt']==4)
+                    $products=getall_productsByCategory($filter);
+                      
+                 
+                foreach($products as $product)
+                {
+                    $name= $product['Name'];
+                    $price= $product['S_price'];
+                    $id=$product['Products_id'];
+                    $size= $product['Size'];
+                    $type= $product['Type'];
+                    $cat=$product['Category'];
+				    $avail=$product['Stock']-$product['Sold'];
+                    echo '<tr align = "left">
                    
-                    <div class="dropdown">
-                       <a href="item_details.html"><img src = "../Kids Product/product1.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
+                    <div class="dropdown">';
+                       echo '<a href="itemDetails.php?id='.$id.'&price='.$price.'&size='.$size.'&type='.$type.'&avail='.$avail.'&cat='.$cat.'&name='.$name.'">';
+                       echo '<img src = "products/'.$id.'.jpg" height="300px" width="300" style="margin:15" class="btn-social">';
+                       echo '</a>';
                         
-                        <div class="dropdown-content">
-                        
-                        </div>
-                        <p class="price"><u>Price: 1500 BDT.</u></p>
-                    </div>
+                       echo '<p class="price"><u>Price: '.$price.'</u></p>';
+                    echo '</div>';
 								
-                    <div class="dropdown">
-                         <a href="item_details.html"><img src = "../Kids Product/product3.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 1400 BDT.</u></p>
-                    </div>
-
-                    <div class="dropdown">
-                        <a href="item_details.html"><img src = "../Kids Product/product6.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 500 BDT.</u></p>
-                    </div>
-        
-        	    </tr>
-                
-                <br>
-                <tr>
-                
-    				<div class="dropdown">
-                         <a href="item_details.html"><img src = "../Kids Product/product5.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 900 BDT.</u></p>
-                     </div>
-                     
-				     <div class="dropdown">
-                         <a href="item_details.html"><img src = "../Kids Product/product4.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 1300 BDT.</u></p>
-                    </div>
-                    
-                    <div class="dropdown">
-                         <a href="item_details.html"><img src = "../Kids Product/product8.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 1500 BDT.</u></p>
-                    </div>
-								
-                </tr>
-                
-                <br>
-                <tr align = "left">
-                   
-                    <div class="dropdown">
-                        <a href="item_details.html"><img src = "../Kids Product/product7.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                        <div class="dropdown-content">
-                        
-                        </div>
-                        <p class="price"><u>Price: 4000 BDT.</u></p>
-                    </div>
-								
-                    <div class="dropdown">
-                         <a href="item_details.html"><img src = "../Kids Product/product4.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 1500 BDT.</u></p>
-                    </div>
-
-                    <div class="dropdown">
-                         <a href="item_details.html"><img src = "../Kids Product/product10.jpg" height="300px" width="300" style="margin:15" class="btn-social"></a>
-                         <div class="dropdown-content">
-                         
-                         </div>
-                         <p class="price"><u>Price: 1000 BDT.</u></p>
-                    </div>
-        
-        	    </tr>
-							
+        	    echo '</tr>';
+                }?>		
              </table>
-        </div>
+        </div>          
     </div>
 </section>
 <hr>
@@ -155,5 +155,4 @@ echo '
 </div>
 
 <br>
-<hr class="hr_border"><br>';
-?>
+<hr class="hr_border"><br>

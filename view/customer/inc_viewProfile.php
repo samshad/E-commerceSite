@@ -1,7 +1,24 @@
+<?php //require_once "../model/sqls.php"; ?>
 <div class="right-bar">
 	
 	<div>
-		<img src="../raw/defaultPic.png" alt="Profile Picture" height="100" width="100"> <br>
+	   <?php
+        
+        $txt=$_SESSION['currUser']['Username'];
+        
+        $result=ispicuploaded($txt);
+    
+        if($result=="yes")
+        {
+            $name = $txt.".jpg";
+            echo "<img src=\"Profile Pictures/$name\" height=100 width=100/>";
+        }
+     
+        else {
+            echo '<img src="raw/defaultPic.png" alt="Profile Picture" height="100" width="100"> <br>';
+        }
+		
+        ?>    
 		<a href="changeProfilePic.php">Change Profile Picture</a>
 	</div>
 	<hr>
@@ -46,8 +63,9 @@
 		<label id="mobile"> <?php echo $_SESSION['currUser']['Phone']; ?></label>
 		<hr>
 		
-		<label id="address"> banasree</label>
-  
+		<label id="address"> <?php echo $_SESSION['currUser']['Address']; ?></label>
+	
+	
 	</div>
 	<hr>
 	

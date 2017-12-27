@@ -24,7 +24,7 @@ function isUniqueUserName($name){
 }
 
 function addUsers($users){
-    $sql = "INSERT INTO users(Username, Password, Type, Status) VALUES('$users[uname]', '$users[pass]', '$users[type]', 'valid')";
+    $sql = "INSERT INTO users(Username, Password, Type, Status, Pic) VALUES('$users[uname]', '$users[pass]', '$users[type]', 'valid', 'no')";
     
     $result = executeSQL($sql);
     
@@ -58,6 +58,15 @@ function getCustomerByUsername($customer){
 	$customer=mysqli_fetch_assoc($result);
 	
 	return $customer;
+}
+
+function getUserType($customer){
+	$sql = "SELECT * FROM users WHERE Username = '$customer'";
+	$result = executeSQL($sql);
+	
+	$customer=mysqli_fetch_assoc($result);
+	
+	return $customer['Type'];
 }
 
 function editUserDOB($customer){
@@ -107,6 +116,347 @@ function editUserLname($customer){
 	
 	return $result;
 }
+
+function editUserAddress($customer){
+	$sql = "UPDATE customer SET Address='$customer[address]' WHERE Username='$customer[username]'";
+	
+	$result = executeSQL($sql);
+	
+	return $result;
+}
+
+/*---------------------------------For Product Showcase-------------------------------------*/
+
+function getall_productsByCategory($all_productscategory){
+        
+        $type= $all_productscategory['type'];
+        
+        $cat=$all_productscategory['category'];
+        
+        if($cat=="all")
+        {
+            $sql = "SELECT * from all_products WHERE Type='$type'";
+        }
+        
+        else
+            $sql = "SELECT * FROM all_products WHERE Type = '$type' AND Category = '$cat'";
+        
+        $result = executeSQL($sql);
+        
+        $all_products = array();
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $all_products[$i] = $row;
+        }
+        
+        if($result!=true)
+        {
+             echo "<script>
+                    alert('Failed From all products');
+                    
+                   </script>";
+        }
+        
+        return $all_products;
+}
+
+function getall_productsBySize($all_productssize){
+        
+        $type= $all_productssize['type'];
+        
+        $cat=$all_productssize['category'];
+        
+        if($cat=="all")
+        {
+            $sql = "SELECT * from all_products WHERE Type='$type' AND Size='$all_productssize[size]'";
+        }
+        
+        
+        else $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' AND Size='$all_productssize[size]'";
+        
+        $result = executeSQL($sql);
+        
+        $all_products = array();
+    
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $all_products[$i] = $row;
+        }
+        
+        if($result!=true)
+        {
+            echo "<script>
+                    alert('Failed From all products');
+                    
+                 </script>";
+        }
+        
+        return $all_products;
+}
+
+function getall_productsBySprice($all_productss_price){
+        
+        $type= $all_productss_price['type'];
+        $cat=$all_productss_price['category'];
+        
+        if($cat=="all")
+        {
+            if($all_productss_price['price']=="1000")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND S_price<1000";
+            }
+
+            if($all_productss_price['price']=="1500")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND S_price>=1000 AND S_price<=1500";
+            }
+
+            if($all_productss_price['price']=="2000")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND S_price>=1500 AND S_price<=2000";
+            }
+
+            if($all_productss_price['price']=="2500")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND S_price>=2000 AND S_price<=2500";
+            }
+
+            if($all_productss_price['price']=="2500")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND S_price>=2500";
+            }
+        }
+        
+        else
+        {
+            if($all_productss_price['price']=="1000")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' AND S_price<1000";
+            }
+
+            if($all_productss_price['price']=="1500")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' AND S_price>=1000 AND S_price<=1500";
+            }
+
+            if($all_productss_price['price']=="2000")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' AND S_price>=1500 AND S_price<=2000";
+            }
+
+            if($all_productss_price['price']=="2500")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' AND S_price>=2000 AND S_price<=2500";
+            }
+
+            if($all_productss_price['price']=="2500")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' AND S_price>=2500";
+            }
+        }
+        
+        
+       
+        $result = executeSQL($sql);
+        
+        var_dump($result);
+        
+        $all_products = array();
+    
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $all_products[$i] = $row;
+        }
+        
+         if($result!=true)
+        {
+             echo "<script>
+                    alert('Failed From all products');
+                    
+                 </script>";
+        }
+        
+        return $all_products;
+}
+
+function getall_productsBySold($all_productssold){
+       
+        $type= $all_productssold['type'];
+        $cat=$all_productssold['category'];
+        
+        if($cat=="all")
+        {
+            $sql = "SELECT * from all_products WHERE Type='$type' ORDER BY Sold DESC";
+        }
+       
+        $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' ORDER BY Sold DESC";
+        
+       
+        $result = executeSQL($sql);
+        
+        $all_products = array();
+    
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $all_products[$i] = $row;
+        }
+        
+         if($result!=true)
+        {
+             echo "<script>
+                    alert('Failed From all products');
+                    
+                 </script>";
+        }
+        
+        return $all_products;
+    }
+
+    function getall_productsBySort($all_productssort){
+        
+        $type= $all_productssort['type'];
+        $cat=$all_productssort['category'];
+        
+        if($cat=="all")
+        {
+            if($all_productssort['srt']=="asc")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' ORDER BY S_price ASC";
+            }
+            
+            if($all_productssort['srt']=="dsc")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' ORDER BY S_price DESC";
+            }
+
+            if($all_productssort['srt']=="sold")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' ORDER BY Sold DESC";
+            }
+
+            if($all_productssort['srt']=="arrival")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' ORDER BY Products_id DESC";
+            }
+        }
+        
+        
+        else 
+        {
+            if($all_productssort['srt']=="asc")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' ORDER BY S_price ASC";
+            }
+        
+            if($all_productssort['srt']=="dsc")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' ORDER BY S_price DESC";
+            }
+
+            if($all_productssort['srt']=="sold")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' ORDER BY Sold DESC";
+            }
+
+            if($all_productssort['srt']=="arrival")
+            {
+                $sql = "SELECT * from all_products WHERE Type='$type' AND Category='$cat' ORDER BY Products_id DESC";
+            }
+        }
+        
+       
+        $result = executeSQL($sql);
+        
+        var_dump($result);
+        
+        $all_products = array();
+        
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $all_products[$i] = $row;
+        }
+        
+         if($result!=true)
+        {
+             echo "<script>
+                    alert('Failed From all products');
+                    
+                 </script>";
+        }
+        
+        return $all_products;
+}
+
+ function getall_productsByFilter($filter){
+        $sz="$filter[size]";
+        $cat="$filter[category]";
+        $tp="$filter[type]";
+        
+        $sql = "SELECT * FROM all_products WHERE Type = '$tp'";
+     
+        $result = executeSQL($sql);
+    
+        $all_products = array();
+     
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $all_products[$i] = $row;
+        }
+        
+        if($result!=true)
+        {
+             echo "<script>
+                    alert('Failed From all products');
+                    
+                 </script>";
+        }
+        
+        return $all_products;
+}
+
+function uploadpic($usersName){
+    
+        var_dump($usersName);
+    
+        $sql = "UPDATE users SET Pic='yes' WHERE Username='$usersName'";
+    
+        $result = executeSQL($sql);
+        
+        
+        if($result!=true)
+        {
+            echo "<script>
+                    alert('Failed From users');
+                    
+                 </script>";
+        }
+    
+       
+        return $result;
+        
+        
+    }
+
+function ispicuploaded($usersName){
+    
+        $sql = "SELECT * FROM users WHERE Username='$usersName'";
+    
+        $result = executeSQL($sql);
+    
+        $result=mysqli_fetch_assoc($result);
+        /*$users = array();
+        for($i=0; $row=mysqli_fetch_assoc($result); ++$i){
+            $users[$i] = $row;
+        }*/
+        
+        if($result!=true)
+        {
+            echo "<script>
+                    alert('Failed From users');
+                    
+                 </script>";
+        }
+        
+        
+        
+        return $result['Pic'];
+        
+        //return $users;
+    }
 
 
 ?>

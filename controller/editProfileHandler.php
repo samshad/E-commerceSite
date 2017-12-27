@@ -10,6 +10,7 @@ if(isset($_REQUEST['lname'])) $lname = htmlentities(trim($_REQUEST['lname']), EN
 if(isset($_REQUEST['mobile'])) $mobile = htmlentities(trim($_REQUEST['mobile']), ENT_QUOTES);
 if(isset($_REQUEST['dob'])) $dob = htmlentities(trim($_REQUEST['dob']), ENT_QUOTES);
 if(isset($_REQUEST['gender'])) $gender = htmlentities(trim($_REQUEST['gender']), ENT_QUOTES);
+if(isset($_REQUEST['address'])) $address = htmlentities(trim($_REQUEST['address']), ENT_QUOTES);
 
 $fn = false; $ln = false; $em = false; $m = false; $d = false; $g = false;
 
@@ -69,8 +70,8 @@ if(!empty($dob)){
 	}
 }
 
-if(!empty($fname) and !empty($lname) and !empty($email) and !empty($mobile) and !empty($gender) and !empty($dob)){
-	if(updateDOB($dob) and updateEmail($email) and updateFname($fname) and updateGender($gender) and updateLname($lname) and updateMobile($mobile)){
+if(!empty($fname) and !empty($lname) and !empty($email) and !empty($mobile) and !empty($gender) and !empty($dob)  and !empty($address)){
+	if(updateDOB($dob) and updateEmail($email) and updateFname($fname) and updateAddress($address) and updateGender($gender) and updateLname($lname) and updateMobile($mobile)){
 		$_SESSION['currUser'] = getCustomerByUsername($_SESSION['currUser']['Username']);
 		echo '<script> alert("Update Successful");
 					location.replace("../viewProfile.php"); </script>';
@@ -113,6 +114,11 @@ function updateLname($lname){
 function updateGender($gender){
 	$user = array( 'username' => $_SESSION['currUser']['Username'], 'gender' => $gender );
 	return editUserGender($user);
+}
+
+function updateAddress($address){
+	$user = array( 'username' => $_SESSION['currUser']['Username'], 'address' => $address );
+	return editUserAddress($user);
 }
 
 ?>

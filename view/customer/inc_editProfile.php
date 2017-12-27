@@ -22,7 +22,7 @@
 				<hr>
 				
 				<label>Address:</label>
-				<textarea name="address" cols="30" rows="3" maxlength="100"></textarea>
+				<textarea name="address" cols="30" rows="3" maxlength="100"><?php echo $_SESSION['currUser']['Address']; ?></textarea>
 				
 				<hr>
 				

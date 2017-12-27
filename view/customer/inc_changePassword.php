@@ -1,7 +1,7 @@
 <div class="right-bar">
 	<div class="form">
 		<form>
-			<fieldset class="editField">
+			<fieldset>
 				<legend>Change Password</legend>
 				<input type="Password" name="currentPassword" maxlength="50" placeholder="Current Password"/><br>
 				<input type="Password" name="password1" maxlength="50" placeholder="New Password"/><br>

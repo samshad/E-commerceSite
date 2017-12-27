@@ -12,6 +12,7 @@ if(!empty($uname) and !empty($pass)){
 	if(authenticate($user)){
 		$user = getCustomerByUsername($user['uname']);
 		$_SESSION['currUser'] = $user;
+		$_SESSION['currUser']['Type'] = getUserType($user);
 		header("location: ../index.php");
 	}
 	else{

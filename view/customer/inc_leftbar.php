@@ -1,6 +1,6 @@
 <div class="left-bar">
 	<div style=" margin:5px; margin-left:90px">
-		<img class="img-circle" src="../raw/propic.jpg" style="margin:15px">
+		<!--<img class="img-circle" src="../raw/propic.jpg" style="margin:15px"> -->
 	</div>
 	<h1 style="color: antiquewhite"><?php echo $_SESSION['currUser']['First_name'] . " " . $_SESSION['currUser']['Last_name']; ?></h1>
 	<hr>

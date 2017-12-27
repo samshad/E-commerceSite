@@ -1,7 +1,7 @@
 <section>
 	<div id="" style="width: 50%; height: 50%; position: relative; left: 400;">
 		<form method="post" action="controller/login.php">
-			<fieldset>
+			<fieldset class="editField">
 				<legend>Login</legend>
 				<div id="" style="text-align: center">
 					<input type="Text" id="login_uname" name="login_uname" placeholder="User Name"/><br><br>
