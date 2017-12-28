@@ -1,0 +1,55 @@
+.header{
+	float: right;
+    width: 100%;
+    height: auto;
+	background-color:#444141;
+	
+}
+
+header div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    //border: 1px solid black;
+    //overflow: hidden;
+	//background-color:black;
+	
+}
+
+header div nav{
+    float: right;
+    margin: 2px;
+	text-align:center;
+	//overflow: auto;
+	background-color:black;
+	
+}
+
+header div nav ul li{
+    display: inline-block;
+    margin-left: 7px;
+	padding:0px;
+	//background-color:#444141;
+}
+
+header div nav ul li a{
+    text-decoration: none;
+    font-family: arial;
+    font-size: 17px;
+	display:block;
+	//background-color:black;
+}
+
+ header ul li ul.dropdowns{
+    min-width: 250%; /* Set width of the dropdown */
+	min-height:20%;
+    background: white;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    }
+	
+.header_ul{
+	background-color:#444141;
+}	
