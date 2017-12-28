@@ -1,0 +1,28 @@
+.cartItems{
+    //overflow: hidden;
+    margin: auto;
+    height: auto;
+    text-align: center;
+}
+
+.cartTable{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#cartTable{
+    margin: auto;
+}
+
+#cartTotal{
+    margin: 10px;
+}
+
+#cartTotal h3{
+    font-size: 18px;
+}
+
+
+

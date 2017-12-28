@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    height: auto;
+	background-color:#444141;
+	
+}
+
+footer div{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    //border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+}
+
+footer div p{
+    font-family: arial;
+    font-size: 20px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.left_footer{
+	width:50%;
+	//margin-left:-500;
+	margin-top:20;
+	//margin-left:50;
+	float:left;
+	//background-color:black;
+}
+
+.right_footer{
+	text-align:right;
+	width:30%;
+	//clear:left;
+	//float:right;
+}
