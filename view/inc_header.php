@@ -42,7 +42,7 @@ if(!isset($_SESSION['currUser'])){
         </div>
     </header>';
 }
-else{
+else if($_SESSION['Type'] == "customer"){
     echo'
     <header class="header">
         <div>
@@ -53,6 +53,32 @@ else{
             
             <div style="text-align: right">
                 <ul class="header_ul">
+                <li ><a href="index.php"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li>
+                
+                <li><a href="viewProfile.php"><i class="fa fa-user" aria-hidden="true" style="color: white"></i></a>
+                </li>
+                <li><a href="contactus.php"><i class="fa fa-phone" aria-hidden="true" style="color: white"></i></a></li>
+                <li><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true" style="color: white"></i></a></li>
+            </ul>
+            </div>
+           
+        </div>
+    </header>';
+}
+
+else if($_SESSION['Type'] == "admin"){
+    echo'
+    <header class="header">
+        <div>
+            
+            <div style="text-align: left; position: relative; top: 20">
+                <p style="color: white">Logged In As: <a style="text-decoration: none; color: white" href="viewProfile.php">' . $_SESSION['currUser']['First_name'] . " " . $_SESSION['currUser']['Last_name'] . '</a> . "ADMIN"</p>
+            </div>
+            
+            <div style="text-align: right">
+                <ul class="header_ul">
+                <li><a href="dashboard.php"><i class="fa fa-tachometer" aria-hidden="true" style="color: white"></i></a></li>
                 <li ><a href="index.php"><i class="fa fa-home" aria-hidden="true" style="color: white"></i></a></li>
                 <li><a href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true" style="color: white"></i></a></li>
                 
