@@ -235,3 +235,16 @@ function checkSubmit(){
     alert("Required All Fields !");
     return false;
 }
+
+/*
+function is_valid_mobile(mobile){
+    mobile=mobile.replace(" ","");
+    mobile=mobile.replace("-","");
+    if( /^(0088|\+88)?(01)[156789]{1}[0-9]{8}$/.test(mobile)){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+*/
